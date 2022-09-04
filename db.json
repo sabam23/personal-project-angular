@@ -1,9 +1,22 @@
 {
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
+    "students": [
+        {
+        "id": 1,
+        "firstname": "Saba",
+        "lastname": "Mchedlishvili",
+        "age": 19,
+        "course": 1,
+        "email": "sabamchedlishvili17@gmail.com",
+        "password": "sabasaba",
+        "userSubjects": [
+            {
+
+            }
+        ]
+        }
     ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 3 }
-    ],
-    "profile": { "name": "typicode" }
+
+    "subjects": [
+        
+    ]
 }
