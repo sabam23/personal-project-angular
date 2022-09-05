@@ -13,13 +13,22 @@
             Email Address
             <br>
             <input type="email" placeholder="Email" formControlName="email" class="signIn">
+            <div class="error-container" *ngIf="loginForm.get('email').errors && (loginForm.get('email').touched || loginForm.invalid)">
+              <p *ngIf="loginForm.get('email').errors['account']">Account not found!</p>
+              <p *ngIf="loginForm.get('email').errors['email']">Enter Valid mail address!</p>
+              <p *ngIf="loginForm.get('email').errors['empty']">Please Enter Email!</p>
+            </div>
           </label>
           <label>
             Password
             <br>
-            <input type="password" placeholder="*********" formControlName="password" class="signIn">
+            <input type="password" placeholder="*********" formControlName="password" id="loginPassword">
+            <div class="error-container" *ngIf="loginForm.get('password').errors && loginForm.get('password').touched">
+              <p *ngIf="loginForm.get('password').errors['password']">Incorrect password</p>
+              <p *ngIf="loginForm.get('password').errors['required']">Please Enter Password!</p>
+            </div>
           </label>
-          <button class="signIn-btn">SIGN IN</button>
+          <button class="signIn-btn" (click)="login()">SIGN IN</button>
         </form>
       </div>
     </ng-container>
@@ -49,7 +58,7 @@
             Age
             <br>
             <input type="number" placeholder="Age" formControlName="age" min="18" max="35">
-            <div class="error-container" *ngIf="registerForm.get('age').errors && registerForm.get('age').touched">
+            <div class="error-container" *ngIf="registerForm.get('age').errors && (registerForm.get('age').touched)">
               <p *ngIf="registerForm.get('age').errors['required']">Age field is required!</p>
               <p *ngIf="registerForm.get('age').errors['pattern']">Enter valid Age!</p>
               <p *ngIf="registerForm.get('age').errors['min'] || registerForm.get('age').errors['max']">Age Restriction from 18 to 35!</p>
@@ -96,7 +105,8 @@
             </div>
             <p *ngIf="registerForm.get('repeatPassword').value && registerForm.get('repeatPassword').value === registerForm.get('password').value" style="text-align: center;color: lightgreen">Password Match</p>
           </label>
-          <button class="signIn-btn">REGISTER</button>
+
+          <button class="signIn-btn" (click)="addStudent()">REGISTER</button>
         </form>
       </div>
     </ng-container>

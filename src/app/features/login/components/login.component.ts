@@ -1,7 +1,11 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup, ValidationErrors, Validator, ValidatorFn, Validators} from "@angular/forms";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {passwordValidator} from "../../../core/validators/password.validator";
 import {StudentForm} from "../interfaces/studentform.interface";
+import {LoginService} from "../services/login.service";
+import {Student} from "../interfaces/student.interface";
+import {LoginForm} from "../interfaces/loginForm.interface";
+
 
 
 @Component({
@@ -12,14 +16,61 @@ import {StudentForm} from "../interfaces/studentform.interface";
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private loginService: LoginService) { }
 
   ngOnInit(): void {
+    this.getFullData()
   }
 
-  loginForm = new FormGroup({
-    email: new FormControl<string>('',[Validators.required, Validators.email]),
-    password: new FormControl<string>('', [Validators.required, Validators.pattern("[A-Za-z0-9]+"), Validators.minLength(7)])
+  addStudent(): void {
+    if (this.registerForm.valid) {
+      this.loginService.addStudent(this.registerForm.value as Student).subscribe();
+      window.alert('Student Registered!');
+      this.registerForm.reset();
+      this.getFullData();
+    }
+  }
+
+  studentsArray: Student[] = []
+
+  getFullData(): void{
+    this.loginService.getFullData().subscribe(data => {
+      this.studentsArray = data;
+    });
+  }
+
+  getStudentData(): void{
+    this.loginService.userEmail = this.loginForm.get('email')?.value!;
+    this.loginService.getStudentData().subscribe()
+  }
+
+  login(): void {
+    for (let student of this.studentsArray) {
+      if (this.loginForm.get('email')?.value === student.email) {
+        console.log('correct email');
+        if (student.password === this.loginForm.get('password')?.value) {
+          break;
+        } else {
+          this.loginForm.get('password')?.setErrors({'password': true})
+          break;
+        }
+      } else {
+        let emails = [];
+        for (let student of this.studentsArray) {
+          emails.push(student.email);
+        }
+        if (this.loginForm.get('email')?.value === '') {
+          this.loginForm.get('email')?.setErrors({'empty': true})
+        } else if (!emails.includes(`${this.loginForm.get('email')?.value}`)) {
+          this.loginForm.get('email')?.setErrors({'account': true})
+        }
+      }
+    }
+  }
+
+  loginForm = new FormGroup<LoginForm>(<LoginForm>{
+    email: new FormControl<string>('', [Validators.email]),
+    password: new FormControl<string>('',[Validators.required])
   })
 
   registerForm = new FormGroup(<StudentForm>{

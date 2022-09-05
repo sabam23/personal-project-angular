@@ -45,7 +45,7 @@
     flex-direction: column;
     row-gap: 40px;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     font-family: Raleway, 'sans-serif';
     font-size: 17px;
     margin-top: 25px;
@@ -105,7 +105,7 @@
   border-bottom: red solid 5px;
 }
 
-.ng-valid:not(form,.signIn,#repPassword) {
+.ng-valid:not(form, .signIn, #repPassword, #loginPassword) {
   box-shadow: lightgreen 10px 10px;
 }
 .ng-invalid:not(form, .signIn).ng-touched {

@@ -1,22 +1,55 @@
 {
-    "students": [
-        {
-        "id": 1,
-        "firstname": "Saba",
-        "lastname": "Mchedlishvili",
-        "age": 19,
-        "course": 1,
-        "email": "sabamchedlishvili17@gmail.com",
-        "password": "sabasaba",
-        "userSubjects": [
-            {
-
-            }
-        ]
-        }
-    ],
-
-    "subjects": [
-        
-    ]
+  "students": [
+    {
+      "id": 1,
+      "firstname": "Saba",
+      "lastname": "Mchedlishvili",
+      "age": 19,
+      "course": 1,
+      "email": "sabamchedlishvili17@gmail.com",
+      "password": "sabasaba",
+      "repeatPassword": "sabasaba"
+    },
+    {
+      "name": "George",
+      "lastname": "Brown",
+      "age": 24,
+      "course": 1,
+      "email": "georgebrown@gmail.com",
+      "password": "georgegeorge",
+      "repeatPassword": "georgegeorge",
+      "id": 2
+    },
+    {
+      "name": "John",
+      "lastname": "Smith",
+      "age": 23,
+      "course": 1,
+      "email": "johnsmith@gmail.com",
+      "password": "johnjohn",
+      "repeatPassword": "johnjohn",
+      "id": 3
+    },
+    {
+      "name": "David",
+      "lastname": "Grohl",
+      "age": 27,
+      "course": 1,
+      "email": "davegrohl@yahoo.com",
+      "password": "davedave",
+      "repeatPassword": "davedave",
+      "id": 4
+    },
+    {
+      "name": "Marty",
+      "lastname": "Collins",
+      "age": 32,
+      "course": 1,
+      "email": "marty@gmail.com",
+      "password": "martmart",
+      "repeatPassword": "martmart",
+      "id": 5
+    }
+  ],
+  "subjects": []
 }

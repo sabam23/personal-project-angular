@@ -7,6 +7,7 @@ import { NavBarComponent } from './features/nav-bar/Components/nav-bar.component
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './features/login/components/login.component';
 import {ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import {ReactiveFormsModule} from "@angular/forms";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
+    HttpClientModule,
     ReactiveFormsModule
   ],
   providers: [],
