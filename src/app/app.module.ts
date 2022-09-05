@@ -8,12 +8,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './features/login/components/login.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { DashboardComponent } from './features/Dashboard/components/dashboard.component';
+import {LoginGuard} from "./core/guards/login.guard";
+import {LogPageGuard} from "./core/guards/log-page.guard";
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +26,7 @@ import {HttpClientModule} from "@angular/common/http";
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [LoginGuard,LogPageGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

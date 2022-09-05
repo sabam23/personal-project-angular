@@ -49,6 +49,26 @@
       "password": "martmart",
       "repeatPassword": "martmart",
       "id": 5
+    },
+    {
+      "name": "Donald",
+      "lastname": "Trump",
+      "age": 35,
+      "course": 1,
+      "email": "donaldtrump@gmail.com",
+      "password": "dondon1",
+      "repeatPassword": "dondon1",
+      "id": 6
+    },
+    {
+      "name": "Bruce",
+      "lastname": "Wayne",
+      "age": 34,
+      "course": 1,
+      "email": "bruce@yahoo.com",
+      "password": "brucebruce",
+      "repeatPassword": "brucebruce",
+      "id": 7
     }
   ],
   "subjects": []

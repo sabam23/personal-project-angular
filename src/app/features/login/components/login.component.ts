@@ -5,6 +5,7 @@ import {StudentForm} from "../interfaces/studentform.interface";
 import {LoginService} from "../services/login.service";
 import {Student} from "../interfaces/student.interface";
 import {LoginForm} from "../interfaces/loginForm.interface";
+import {Router} from "@angular/router";
 
 
 
@@ -16,7 +17,7 @@ import {LoginForm} from "../interfaces/loginForm.interface";
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private loginService: LoginService) { }
+  constructor(private loginService: LoginService, private router: Router) { }
 
   ngOnInit(): void {
     this.getFullData()
@@ -47,8 +48,11 @@ export class LoginComponent implements OnInit {
   login(): void {
     for (let student of this.studentsArray) {
       if (this.loginForm.get('email')?.value === student.email) {
-        console.log('correct email');
         if (student.password === this.loginForm.get('password')?.value) {
+          this.loginService.isLoggedIn = true;
+          // this.loginService.loggedUserId = user.id;
+          this.router.navigate(['/student']);
+          this.registerForm.reset();
           break;
         } else {
           this.loginForm.get('password')?.setErrors({'password': true})
@@ -83,6 +87,7 @@ export class LoginComponent implements OnInit {
     repeatPassword: new FormControl<string>('', [Validators.required, Validators.pattern("[A-Za-z0-9]+"),Validators.minLength(7),passwordValidator])
   },{validators: passwordValidator});
 
+  //for UI
   loginPage: boolean = true;
   registerPage: boolean = false;
 }

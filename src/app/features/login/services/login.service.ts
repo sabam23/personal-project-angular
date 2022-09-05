@@ -11,6 +11,8 @@ export class LoginService {
 
   constructor(private http: HttpClient) { }
 
+  public isLoggedIn: boolean = false;
+  public loggedUserId: number = 0;
   private baseUrl = 'http://localhost:3000/';
   public userEmail = '';
 
