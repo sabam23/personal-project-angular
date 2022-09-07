@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {Student} from "../interfaces/student.interface";
+import {User} from "../interfaces/user.interface";
 import {BehaviorSubject, Observable} from "rxjs";
 
 
@@ -22,15 +22,15 @@ export class LoginService {
     this.username.next(username);
   }
 
-  addStudent(payload: Student) {
+  addStudent(payload: User) {
     return this.http.post(this.baseUrl+'users',payload);
   }
 
-  getStudentData(id: number): Observable<Student> {
-    return this.http.get<Student>(`${this.baseUrl}users/${id}`);
+  getStudentData(id: number): Observable<User> {
+    return this.http.get<User>(`${this.baseUrl}users/${id}`);
   }
 
-  getFullData(): Observable<Student[]> {
-    return this.http.get<Student[]>(`${this.baseUrl}users`);
+  getFullData(): Observable<User[]> {
+    return this.http.get<User[]>(`${this.baseUrl}users`);
   }
 }

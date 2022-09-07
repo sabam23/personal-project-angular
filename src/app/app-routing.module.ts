@@ -10,7 +10,7 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
-    canActivate: [LogPageGuard]
+    // canActivate: [LogPageGuard]
   },
   {
     path: '',
@@ -20,7 +20,7 @@ const routes: Routes = [
   {
     path: 'forum',
     component: NewsFeedComponent,
-    canActivate: [LoginGuard]
+    // canActivate: [LoginGuard]
   },
   {
     path: '**',

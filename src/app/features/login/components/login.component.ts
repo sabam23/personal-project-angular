@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {passwordValidator} from "../../../core/validators/password.validator";
-import {StudentForm} from "../interfaces/studentform.interface";
+import {StudentForm} from "../interfaces/userform.interface";
 import {LoginService} from "../services/login.service";
-import {Student} from "../interfaces/student.interface";
+import {User} from "../interfaces/user.interface";
 import {LoginForm} from "../interfaces/loginForm.interface";
 import {Router} from "@angular/router";
 
@@ -25,18 +25,18 @@ export class LoginComponent implements OnInit {
 
   addStudent(): void {
     if (this.registerForm.valid) {
-      this.loginService.addStudent(this.registerForm.value as Student).subscribe();
+      this.loginService.addStudent(this.registerForm.value as User).subscribe();
       window.alert('Student Registered!');
       this.registerForm.reset();
       this.getFullData();
     }
   }
 
-  studentsArray: Student[] = []
+  usersArray: User[] = []
 
   getFullData(): void{
     this.loginService.getFullData().subscribe(data => {
-      this.studentsArray = data;
+      this.usersArray = data;
     });
   }
 
@@ -50,12 +50,12 @@ export class LoginComponent implements OnInit {
 
   login(): void {
 
-    for (let student of this.studentsArray) {
-      if (this.loginForm.get('email')?.value === student.email) {
-        if (student.password === this.loginForm.get('password')?.value) {
+    for (let user of this.usersArray) {
+      if (this.loginForm.get('email')?.value === user.email) {
+        if (user.password === this.loginForm.get('password')?.value) {
           this.loginService.isLoggedIn = true;
-          this.loginService.loggedId = student.id;
-          this.loginService.changeName(`${student.firstname} ${student.lastname}`);
+          this.loginService.loggedId = user.id;
+          this.loginService.changeName(`${user.firstname} ${user.lastname}`);
           this.router.navigateByUrl('/forum').then();
           this.registerForm.reset();
           break;
@@ -65,7 +65,7 @@ export class LoginComponent implements OnInit {
         }
       } else {
         let emails = [];
-        for (let student of this.studentsArray) {
+        for (let student of this.usersArray) {
           emails.push(student.email);
         }
         if (this.loginForm.get('email')?.value === '') {

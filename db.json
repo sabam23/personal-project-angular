@@ -18,5 +18,81 @@
       "repeatPassword": "1234567",
       "id": 2
     }
-  ]
+  ],
+  "allPosts": [
+    {
+      "id": 1,
+      "title": "Html",
+      "post": "Is Html Programming Language?",
+      "category": "programming"
+    },
+    {
+      "id": 2,
+      "title": "Football",
+      "post": "Come on England",
+      "category": "sports"
+    },
+    {
+      "title": "Ronaldo",
+      "post": "Ronaldo is the best football player!",
+      "category": "sports",
+      "id": 3
+    },
+    {
+      "title": "Angular",
+      "post": "what does angular async pipe does?",
+      "category": "programming",
+      "id": 4
+    },
+    {
+      "title": "Temp",
+      "post": "What is good temp for cats?",
+      "category": "medicine",
+      "id": 5
+    }
+  ],
+  "sports": [
+    {
+      "id": 1,
+      "title": "Football",
+      "post": "Come on England",
+      "category": "sports"
+    },
+    {
+      "title": "Ronaldo",
+      "post": "Ronaldo is the best football player!",
+      "category": "sports",
+      "id": 2
+    }
+  ],
+  "medicine": [
+    {
+      "title": "Blood",
+      "post": "What is good % air in our blood",
+      "category": "medicine",
+      "id": 1
+    },
+    {
+      "title": "Temp",
+      "post": "What is good temp for cats?",
+      "category": "medicine",
+      "id": 2
+    }
+  ],
+  "history": [],
+  "programming": [
+    {
+      "id": 1,
+      "title": "Html",
+      "post": "Is Html Programming Language?",
+      "category": "programming"
+    },
+    {
+      "title": "Angular",
+      "post": "what does angular async pipe does?",
+      "category": "programming",
+      "id": 2
+    }
+  ],
+  "other": []
 }

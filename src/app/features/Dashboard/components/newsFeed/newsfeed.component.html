@@ -1,4 +1,27 @@
 <div class="news-feed">
   <app-sidebar></app-sidebar>
-
+  <div class="post-container">
+    <a (click)="question=true" *ngIf="!question">Ask new Post.</a>
+    <div class="post-form" *ngIf="question">
+        <form [formGroup]="postForm">
+          <label>
+            <input formControlName="title" type="text" placeholder="Title">
+          </label>
+          <label>
+            <textarea formControlName="post" type="text" placeholder="What on your mind?"  cols="50" rows="3"></textarea>
+          </label>
+          <label>
+            <select formControlName="category">
+              <option value="sports" selected>Sports</option>
+              <option value="medicine">Medicine</option>
+              <option value="history">History</option>
+              <option value="programming">Programming</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <button class="askBtn" type="button" (click)="addPost(postForm.get('category')?.value)">ADD POST</button>
+          <a (click)="question=false">Close</a>
+        </form>
+    </div>
+  </div>
 </div>

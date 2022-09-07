@@ -6,4 +6,103 @@
   width: 98%;
   margin: 50px auto;
   display: flex;
+
+  & .post-container {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &>a {
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      color: black;
+      padding-bottom: 5px;
+      cursor: pointer;
+      &:hover {
+        border-bottom: solid red 2px;
+      }
+    }
+
+    & .post-form {
+      width: 600px;
+      height: 320px;
+      border: solid lightgrey 1px;
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px 5px gray;
+
+      & > form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Raleway, 'sans-serif';
+        font-size: 17px;
+        margin-bottom: 50px;
+        row-gap: 25px;
+
+        &>a {
+          font-family: 'Raleway', sans-serif;
+          font-size: 14px;
+          color: black;
+          padding-bottom: 5px;
+          cursor: pointer;
+          &:hover {
+            border-bottom: solid red 2px;
+          }
+        }
+
+        & .askBtn {
+          background: #e10600;
+          border-radius: 10px;
+          width: 100px;
+          height: 35px;
+          border: none;
+          color: white;
+          cursor: pointer;
+          font-family: Raleway, 'sans-serif';
+
+          &:hover {
+            background: white;
+            color: black;
+            border: solid #e10600 2px;
+          }
+        }
+
+        & input {
+          width: 190px;
+          height: 40px;
+          border-radius: 7px;
+          padding-left: 10px;
+          margin-top: 7px;
+          box-sizing: border-box;
+          border: none;
+          border-bottom: 2px solid #252f3f;
+        }
+
+        & textarea {
+          border-radius: 10px;
+          padding-left: 10px;
+          font-family: Raleway, 'sans-serif';
+          font-size: 17px;
+          resize: none;
+          border: none;
+          border-bottom: solid #252f3f 2px;
+        }
+
+        & select {
+          background: white;
+          border: none;
+          border-bottom: #161e2e solid 2px;
+          border-radius: 10px;
+          font-family: Raleway, 'sans-serif';
+          width: 160px;
+          height: 30px;
+          padding: 0 8px;
+          font-size: 17px;
+      }
+      }
+    }
+  }
 }
