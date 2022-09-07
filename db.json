@@ -11,7 +11,7 @@
       "repeatPassword": "sabasaba"
     },
     {
-      "name": "George",
+      "firstname": "George",
       "lastname": "Brown",
       "age": 24,
       "course": 1,
@@ -21,7 +21,7 @@
       "id": 2
     },
     {
-      "name": "John",
+      "firstname": "John",
       "lastname": "Smith",
       "age": 23,
       "course": 1,
@@ -31,7 +31,7 @@
       "id": 3
     },
     {
-      "name": "David",
+      "firstname": "David",
       "lastname": "Grohl",
       "age": 27,
       "course": 1,
@@ -41,7 +41,7 @@
       "id": 4
     },
     {
-      "name": "Marty",
+      "firstname": "Marty",
       "lastname": "Collins",
       "age": 32,
       "course": 1,
@@ -51,25 +51,98 @@
       "id": 5
     },
     {
-      "name": "Donald",
-      "lastname": "Trump",
-      "age": 35,
+      "firstname": "test",
+      "lastname": "test",
+      "age": 22,
       "course": 1,
-      "email": "donaldtrump@gmail.com",
-      "password": "dondon1",
-      "repeatPassword": "dondon1",
+      "email": "test@g",
+      "password": "testtest",
+      "repeatPassword": "testtest",
       "id": 6
     },
     {
-      "name": "Bruce",
-      "lastname": "Wayne",
-      "age": 34,
+      "firstname": "Peter",
+      "lastname": "Pen",
+      "age": 26,
       "course": 1,
-      "email": "bruce@yahoo.com",
-      "password": "brucebruce",
-      "repeatPassword": "brucebruce",
+      "email": "peterpan@gmail.com",
+      "password": "petpet1",
+      "repeatPassword": "petpet1",
       "id": 7
     }
   ],
-  "subjects": []
+  "subjects": [
+    {
+      "id": 1,
+      "title": "Python",
+      "students": [],
+      "credit": 6
+    },
+    {
+      "id": 2,
+      "title": "Front End Development",
+      "students": [],
+      "credit": 6
+    },
+    {
+      "id": 3,
+      "title": "Database Sql+",
+      "students": [],
+      "credit": 6
+    },
+    {
+      "id": 4,
+      "title": "Mobile Development",
+      "students": [],
+      "credit": 6
+    },
+    {
+      "id": 5,
+      "title": "English B2 Level",
+      "students": [],
+      "credit": 6
+    },
+    {
+      "id": 6,
+      "title": "Machine Learning",
+      "students": [],
+      "credit": 6
+    },
+    {
+      "id": 7,
+      "title": "Calculus",
+      "students": [],
+      "credit": 6
+    },
+    {
+      "id": 8,
+      "title": "Computer Networks (CCNA)",
+      "students": [],
+      "credit": 6
+    },
+    {
+      "id": 9,
+      "title": "Data structures and Algorithms",
+      "students": [],
+      "credit": 6
+    },
+    {
+      "id": 10,
+      "title": "Operating System Linux",
+      "students": [],
+      "credit": 6
+    },
+    {
+      "id": 11,
+      "title": "Innovations Management and Startups",
+      "students": [],
+      "credit": 6
+    },
+    {
+      "id": 12,
+      "title": "Discrete Mathematics",
+      "students": [],
+      "credit": 6
+    }
+  ]
 }

@@ -8,23 +8,31 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './features/login/components/login.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
-import { DashboardComponent } from './features/Dashboard/components/dashboard.component';
+import { DashboardComponent } from './features/Dashboard/components/Dashboard-Mainpage/dashboard.component';
 import {LoginGuard} from "./core/guards/login.guard";
 import {LogPageGuard} from "./core/guards/log-page.guard";
+import { CoursesComponent } from './features/Dashboard/components/courses/courses.component';
+import { SidebarComponent } from './features/Dashboard/components/sidebar/sidebar.component';
+import {CommonModule} from "@angular/common";
+import { NotfoundComponent } from './features/notfoundPage/components/notfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    CoursesComponent,
+    SidebarComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [LoginGuard,LogPageGuard],
   bootstrap: [AppComponent]

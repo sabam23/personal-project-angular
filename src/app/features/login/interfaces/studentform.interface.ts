@@ -1,7 +1,7 @@
-import {Form, FormControl} from "@angular/forms";
+import { FormControl} from "@angular/forms";
 
 export interface StudentForm{
-  name: FormControl<string>;
+  firstname: FormControl<string>;
   lastname: FormControl<string>;
   age: FormControl<number>;
   course: FormControl<number>;

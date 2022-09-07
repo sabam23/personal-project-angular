@@ -6,7 +6,7 @@
   align-content: center;
   justify-content: space-between;
 
-  &  div:not(.info-bar) {
+  &  div {
     width: 100px;
     display: flex;
     justify-content: center;
@@ -20,11 +20,6 @@
     &:hover {
       background: #15151e;
     }
-  }
-
-  & > .info-bar {
-    display: flex;
-    flex-direction: row;
   }
 }
 

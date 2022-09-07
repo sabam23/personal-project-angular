@@ -28,7 +28,7 @@
               <p *ngIf="loginForm.get('password').errors['required']">Please Enter Password!</p>
             </div>
           </label>
-          <button class="signIn-btn" (click)="login()">SIGN IN</button>
+          <button type="button" class="signIn-btn" (click)="login()">SIGN IN</button>
           <p>Don't have an account yet?  <a (click)="loginPage=false;registerPage=true">Register</a></p>
         </form>
       </div>
@@ -40,10 +40,10 @@
           <label>
             Name
             <br>
-            <input type="text" placeholder="First name" formControlName="name">
-            <div class="error-container" *ngIf="registerForm.get('name').errors && registerForm.get('name').touched">
-              <p *ngIf="registerForm.get('name').errors['required']">Name field is required!</p>
-              <p *ngIf="registerForm.get('name').errors['pattern']">Enter valid name!</p>
+            <input type="text" placeholder="First name" formControlName="firstname">
+            <div class="error-container" *ngIf="registerForm.get('firstname').errors && registerForm.get('firstname').touched">
+              <p *ngIf="registerForm.get('firstname').errors['required']">Name field is required!</p>
+              <p *ngIf="registerForm.get('firstname').errors['pattern']">Enter valid name!</p>
             </div>
           </label>
           <label>

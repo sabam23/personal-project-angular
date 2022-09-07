@@ -40,18 +40,22 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  getStudentData(): void{
-    this.loginService.userEmail = this.loginForm.get('email')?.value!;
-    this.loginService.getStudentData().subscribe()
+  loggedUser: object = {};
+
+  getStudentData(id: number): void{
+    this.loginService.getStudentData(id).subscribe(data => {
+      this.loggedUser = data;
+    })
   }
 
   login(): void {
+
     for (let student of this.studentsArray) {
       if (this.loginForm.get('email')?.value === student.email) {
         if (student.password === this.loginForm.get('password')?.value) {
-          this.loginService.isLoggedIn = true;
-          // this.loginService.loggedUserId = user.id;
-          this.router.navigate(['/student']);
+          this.loginService.isLoggedIn = true
+          this.loginService.changeName(`${student.firstname} ${student.lastname}`);
+          this.router.navigateByUrl('/student').then();
           this.registerForm.reset();
           break;
         } else {
@@ -78,7 +82,7 @@ export class LoginComponent implements OnInit {
   })
 
   registerForm = new FormGroup(<StudentForm>{
-    name: new FormControl<string>('' , [Validators.required, Validators.pattern('^[a-zA-Z-]*$')]),
+    firstname: new FormControl<string>('' , [Validators.required, Validators.pattern('^[a-zA-Z-]*$')]),
     lastname: new FormControl<string>('', [Validators.required,Validators.pattern('^[a-zA-Z-]*$')]),
     age: new FormControl<number>(NaN, [Validators.required,Validators.pattern('^[0-9]*$'),Validators.min(18),Validators.max(35)]),
     course: new FormControl<number>(1, [Validators.required,Validators.pattern('^[0-9]*$')]),

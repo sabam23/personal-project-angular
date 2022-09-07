@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {LoginService} from "../../login/services/login.service";
 
 @Component({
   selector: 'app-nav-bar',
@@ -8,9 +9,10 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public loginService: LoginService) { }
 
   ngOnInit(): void {
+    this.loginService.currentUsername.subscribe();
   }
 
 }
