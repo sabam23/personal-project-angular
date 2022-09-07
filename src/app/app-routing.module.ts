@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './features/login/components/login.component';
-import {DashboardComponent} from "./features/Dashboard/components/Dashboard-Mainpage/dashboard.component";
-import {LoginGuard} from "./core/guards/login.guard";
 import {LogPageGuard} from "./core/guards/log-page.guard";
-import {CoursesComponent} from "./features/Dashboard/components/courses/courses.component";
 import {NotfoundComponent} from "./features/notfoundPage/components/notfound.component";
+import {NewsFeedComponent} from "./features/Dashboard/components/newsFeed/newsfeed.component";
+import {LoginGuard} from "./core/guards/login.guard";
 
 const routes: Routes = [
   {
@@ -19,13 +18,8 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'student',
-    component: DashboardComponent,
-    canActivate: [LoginGuard]
-  },
-  {
-    path: 'student/courses',
-    component: CoursesComponent,
+    path: 'forum',
+    component: NewsFeedComponent,
     canActivate: [LoginGuard]
   },
   {

@@ -1,4 +1,4 @@
 <div class="nav-bar">
-  <div routerLink="/login">Classroom</div>
-  <div *ngIf="loginService.username" routerLink="/student">{{ this.loginService.username | async }}</div>
+  <div routerLink="/login">Forum</div>
+  <div *ngIf="loginService.username | async" routerLink="/user">{{ this.loginService.username | async }}</div>
 </div>

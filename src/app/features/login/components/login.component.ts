@@ -53,9 +53,10 @@ export class LoginComponent implements OnInit {
     for (let student of this.studentsArray) {
       if (this.loginForm.get('email')?.value === student.email) {
         if (student.password === this.loginForm.get('password')?.value) {
-          this.loginService.isLoggedIn = true
+          this.loginService.isLoggedIn = true;
+          this.loginService.loggedId = student.id;
           this.loginService.changeName(`${student.firstname} ${student.lastname}`);
-          this.router.navigateByUrl('/student').then();
+          this.router.navigateByUrl('/forum').then();
           this.registerForm.reset();
           break;
         } else {
@@ -85,7 +86,6 @@ export class LoginComponent implements OnInit {
     firstname: new FormControl<string>('' , [Validators.required, Validators.pattern('^[a-zA-Z-]*$')]),
     lastname: new FormControl<string>('', [Validators.required,Validators.pattern('^[a-zA-Z-]*$')]),
     age: new FormControl<number>(NaN, [Validators.required,Validators.pattern('^[0-9]*$'),Validators.min(18),Validators.max(35)]),
-    course: new FormControl<number>(1, [Validators.required,Validators.pattern('^[0-9]*$')]),
     email: new FormControl<string>('', [Validators.required, Validators.email]),
     password: new FormControl<string>('', [Validators.required, Validators.pattern("[A-Za-z0-9]+"), Validators.minLength(7)]),
     repeatPassword: new FormControl<string>('', [Validators.required, Validators.pattern("[A-Za-z0-9]+"),Validators.minLength(7),passwordValidator])

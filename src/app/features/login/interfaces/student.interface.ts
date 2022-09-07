@@ -3,7 +3,6 @@ export interface Student {
   firstname: string;
   lastname: string;
   age: number;
-  course: number;
   email: string;
   password: string;
   repeatPassword: string;

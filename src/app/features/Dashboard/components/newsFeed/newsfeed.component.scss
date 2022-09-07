@@ -2,13 +2,8 @@
   box-sizing: border-box;
 }
 
-.dashboard {
+.news-feed {
   width: 98%;
   margin: 50px auto;
   display: flex;
-
-
-  & .course-list {
-    width: 850px;
-  }
 }

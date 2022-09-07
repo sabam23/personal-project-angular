@@ -1,11 +1,10 @@
 {
-  "students": [
+  "users": [
     {
       "id": 1,
       "firstname": "Saba",
       "lastname": "Mchedlishvili",
       "age": 19,
-      "course": 1,
       "email": "sabamchedlishvili17@gmail.com",
       "password": "sabasaba",
       "repeatPassword": "sabasaba"
@@ -13,136 +12,11 @@
     {
       "firstname": "George",
       "lastname": "Brown",
-      "age": 24,
-      "course": 1,
-      "email": "georgebrown@gmail.com",
-      "password": "georgegeorge",
-      "repeatPassword": "georgegeorge",
+      "age": 35,
+      "email": "george@gmail.com",
+      "password": "1234567",
+      "repeatPassword": "1234567",
       "id": 2
-    },
-    {
-      "firstname": "John",
-      "lastname": "Smith",
-      "age": 23,
-      "course": 1,
-      "email": "johnsmith@gmail.com",
-      "password": "johnjohn",
-      "repeatPassword": "johnjohn",
-      "id": 3
-    },
-    {
-      "firstname": "David",
-      "lastname": "Grohl",
-      "age": 27,
-      "course": 1,
-      "email": "davegrohl@yahoo.com",
-      "password": "davedave",
-      "repeatPassword": "davedave",
-      "id": 4
-    },
-    {
-      "firstname": "Marty",
-      "lastname": "Collins",
-      "age": 32,
-      "course": 1,
-      "email": "marty@gmail.com",
-      "password": "martmart",
-      "repeatPassword": "martmart",
-      "id": 5
-    },
-    {
-      "firstname": "test",
-      "lastname": "test",
-      "age": 22,
-      "course": 1,
-      "email": "test@g",
-      "password": "testtest",
-      "repeatPassword": "testtest",
-      "id": 6
-    },
-    {
-      "firstname": "Peter",
-      "lastname": "Pen",
-      "age": 26,
-      "course": 1,
-      "email": "peterpan@gmail.com",
-      "password": "petpet1",
-      "repeatPassword": "petpet1",
-      "id": 7
-    }
-  ],
-  "subjects": [
-    {
-      "id": 1,
-      "title": "Python",
-      "students": [],
-      "credit": 6
-    },
-    {
-      "id": 2,
-      "title": "Front End Development",
-      "students": [],
-      "credit": 6
-    },
-    {
-      "id": 3,
-      "title": "Database Sql+",
-      "students": [],
-      "credit": 6
-    },
-    {
-      "id": 4,
-      "title": "Mobile Development",
-      "students": [],
-      "credit": 6
-    },
-    {
-      "id": 5,
-      "title": "English B2 Level",
-      "students": [],
-      "credit": 6
-    },
-    {
-      "id": 6,
-      "title": "Machine Learning",
-      "students": [],
-      "credit": 6
-    },
-    {
-      "id": 7,
-      "title": "Calculus",
-      "students": [],
-      "credit": 6
-    },
-    {
-      "id": 8,
-      "title": "Computer Networks (CCNA)",
-      "students": [],
-      "credit": 6
-    },
-    {
-      "id": 9,
-      "title": "Data structures and Algorithms",
-      "students": [],
-      "credit": 6
-    },
-    {
-      "id": 10,
-      "title": "Operating System Linux",
-      "students": [],
-      "credit": 6
-    },
-    {
-      "id": 11,
-      "title": "Innovations Management and Startups",
-      "students": [],
-      "credit": 6
-    },
-    {
-      "id": 12,
-      "title": "Discrete Mathematics",
-      "students": [],
-      "credit": 6
     }
   ]
 }

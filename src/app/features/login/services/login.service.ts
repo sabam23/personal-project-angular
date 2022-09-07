@@ -13,6 +13,7 @@ export class LoginService {
 
   public isLoggedIn: boolean = false;
   private baseUrl = 'http://localhost:3000/';
+  public loggedId:number = 0;
 
   username = new BehaviorSubject<string>('');
   currentUsername = this.username.asObservable();
@@ -22,14 +23,14 @@ export class LoginService {
   }
 
   addStudent(payload: Student) {
-    return this.http.post(this.baseUrl+'students',payload);
+    return this.http.post(this.baseUrl+'users',payload);
   }
 
-  getStudentData(id: number): Observable<any> {
-    return this.http.get<any>(`${this.baseUrl}students/${id}`);
+  getStudentData(id: number): Observable<Student> {
+    return this.http.get<Student>(`${this.baseUrl}users/${id}`);
   }
 
   getFullData(): Observable<Student[]> {
-    return this.http.get<Student[]>(`${this.baseUrl}students`);
+    return this.http.get<Student[]>(`${this.baseUrl}users`);
   }
 }

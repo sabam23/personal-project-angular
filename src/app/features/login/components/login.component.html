@@ -66,19 +66,6 @@
             </div>
           </label>
           <label>
-            Course
-            <br>
-            <select formControlName="course">
-              <option value=1 selected>1</option>
-              <option value=2>2</option>
-              <option value=3>3</option>
-              <option value=4>4</option>
-            </select>
-            <div class="error-container" *ngIf="registerForm.get('course').errors && registerForm.get('course').touched">
-              <p *ngIf="registerForm.get('course').errors['required']">Course field is required!</p>
-            </div>
-          </label>
-          <label>
             Email
             <br>
             <input type="email" placeholder="Email address" formControlName="email">
