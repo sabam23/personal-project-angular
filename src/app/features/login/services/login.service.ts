@@ -12,7 +12,7 @@ export class LoginService {
   constructor(private http: HttpClient) { }
 
   public isLoggedIn: boolean = false;
-  private baseUrl = 'http://localhost:3000/';
+  private baseUrl = 'http://localhost:3004/';
   public loggedId:number = 0;
 
   username = new BehaviorSubject<string>('');

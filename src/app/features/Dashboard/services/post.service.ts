@@ -11,17 +11,21 @@ export class PostService {
 
   constructor(private http: HttpClient) { }
 
-  private baseUrl = 'http://localhost:3000/';
+  private baseUrl = 'http://localhost:3004/';
 
-  addPost(payload: Post,category: string) {
-    return this.http.post<Post>(`${this.baseUrl}${category}`,payload);
+  addPost(payload: Post) {
+    return this.http.post<Post>(`${this.baseUrl}posts`,payload);
   }
 
   getUserPosts(id: number): Observable<Post[]> {
-    return this.http.get<Post[]>(`${this.baseUrl}allPosts?userId=${id}`);
+    return this.http.get<Post[]>(`${this.baseUrl}posts?userId=${id}`);
+  }
+
+  deletePost(id:number) {
+    return this.http.delete(`${this.baseUrl}posts/${id}`);
   }
 
   getFullData(): Observable<Post[]> {
-    return this.http.get<Post[]>(`${this.baseUrl}allPosts`);
+    return this.http.get<Post[]>(`${this.baseUrl}posts`);
   }
 }

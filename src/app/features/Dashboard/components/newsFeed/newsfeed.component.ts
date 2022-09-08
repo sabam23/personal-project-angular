@@ -36,11 +36,11 @@ export class NewsFeedComponent implements OnInit {
     formValue.clicks = 0;
     formValue.comments = [];
     formValue.userId = this.loginService.loggedId;
-    this.postService.addPost(formValue as Post, 'allPosts').subscribe(data => {
+    this.postService.addPost(formValue as Post).subscribe(data => {
       this.posts$ = this.postService.getFullData();
     });
-    this.postService.addPost(formValue as Post, category).subscribe();
     this.question = false;
+    formValue = {};
     this.postForm.reset();
   }
   question: boolean = false;

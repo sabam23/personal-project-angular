@@ -1,3 +1,76 @@
-.posts {
-  margin-top: 100px;
+.newsFeedPosts {
+  width: 100%;
+  border-radius: 15px;
+
+  & .news-header {
+    width: 100%;
+    background: #38383f;
+    height: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > p {
+      font-family: 'Raleway', sans-serif;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+
+  & .post-item {
+    margin: 20px auto;
+    width: 800px;
+    background: #161e2e;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    & .username {
+      font-family: Ubuntu, 'sans-serif';
+      font-size: 17px;
+      text-align: right;
+      padding: 5px 15px;
+    }
+
+    & .title {
+      font-family: Raleway, 'sans-serif';
+      font-size: 25px;
+      color: #ff7b72;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    & .post {
+      text-align: left;
+      font-size: 18px;
+      padding-left: 10px;
+      color: #a5d6ff;
+      font-family: Raleway, 'sans-serif';
+      margin-bottom: 30px;
+    }
+
+    & .footer {
+      display: flex;
+      flex-direction: row;
+      column-gap: 10px;
+      width: 790px;
+      justify-content: space-around;
+      margin-bottom: 10px;
+      font-family: 'Raleway', sans-serif;
+
+      &  button {
+        width: 60px;
+        background: none;
+        color: white;
+        border: none;
+        font-family: 'Ubuntu', sans-serif;
+        border-bottom: solid pink 2px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+    }
+  }
 }

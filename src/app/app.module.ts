@@ -15,6 +15,7 @@ import {CommonModule} from "@angular/common";
 import { NotfoundComponent } from './features/notfoundPage/components/notfound.component';
 import {NewsFeedComponent} from "./features/Dashboard/components/newsFeed/newsfeed.component";
 import { UserpageComponent } from './features/UserPage/components/userpage.component';
+import { UserInfoComponent } from './features/Dashboard/components/userinfo/userinfo.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { UserpageComponent } from './features/UserPage/components/userpage.compo
     NewsFeedComponent ,
     SidebarComponent,
     NotfoundComponent,
-    UserpageComponent
+    UserpageComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,

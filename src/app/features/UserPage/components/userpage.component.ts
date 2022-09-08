@@ -20,4 +20,10 @@ export class UserpageComponent implements OnInit {
   ngOnInit(): void {
     this.posts = this.postService.getUserPosts(this.loginService.loggedId);
   }
+
+  deletePost(id:number): void {
+    this.postService.deletePost(id).subscribe(data => {
+      this.posts = this.postService.getUserPosts(this.loginService.loggedId);
+    });
+  }
 }

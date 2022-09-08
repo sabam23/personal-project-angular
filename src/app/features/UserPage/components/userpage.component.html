@@ -1,8 +1,22 @@
-<div *ngFor="let post of posts | async" class="posts">
-  <div>
-    <div>{{post.username}}</div>
-    <div>{{post.title}}</div>
-    <div>{{post.post}}</div>
-    <div>Clicked{{ post.clicks}} times</div>
+<app-sidebar></app-sidebar>
+<app-userinfo></app-userinfo>
+<div class="newsFeedPosts">
+  <div class="news-header">
+    <p>My Posts</p>
+  </div>
+  <div *ngFor="let post of posts | async">
+    <div class="post-item">
+      <div class="username">{{post.username}}</div>
+      <div class="title">{{ post.title }}</div>
+      <div class="post">{{ post.post }}</div>
+      <div class="footer">
+        <div class="click">Clicked {{post.clicks}} times</div>
+        <a>See Full Discussion</a>
+        <div class="buttons" *ngIf="post.userId === loginService.loggedId">
+          <button  class="editBtn" title="edit">EDIT</button>
+          <button (click)="deletePost(post.id)" class="removeBtn" title="remove">DELETE</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

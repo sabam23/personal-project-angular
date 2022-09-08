@@ -28,79 +28,10 @@
       "id": 3
     }
   ],
-  "allPosts": [
+  "posts": [
     {
-      "id": 1,
-      "title": "Football",
-      "post": "Come on England",
-      "category": "sports",
-      "username": "Saba Mchedlishvili",
-      "userId": 1,
-      "clicks": 0
-    },
-    {
-      "title": "Blood",
-      "post": "What is good % air in our blood",
-      "category": "medicine",
-      "username": "Saba Mchedlishvili",
-      "id": 2,
-      "userId": 1,
-      "clicks": 0
-    },
-    {
-      "id": 3,
-      "title": "Html",
-      "post": "Is Html Programming Language?",
-      "category": "programming",
-      "username": "Saba Mchedlishvili",
-      "userId": 1,
-      "clicks": 0
-    },
-    {
-      "title": "Real Madrid",
-      "post": "Real madrid is the best team i the world!",
-      "category": "sports",
-      "username": "George Brown",
-      "clicks": 0,
-      "comments": [],
-      "userId": 2,
-      "id": 4
-    },
-    {
-      "title": "Nba",
-      "post": "am i the best playe?",
-      "category": "sports",
-      "username": "Klay Thompson",
-      "clicks": 0,
-      "comments": [],
-      "userId": 3,
-      "id": 5
-    },
-    {
-      "title": "Terrance",
-      "post": "Parker",
-      "category": "programming",
-      "username": "Klay Thompson",
-      "clicks": 0,
-      "comments": [],
-      "userId": 3,
-      "id": 6
-    }
-  ],
-  "sports": [
-    {
-      "id": 1,
-      "title": "Football",
-      "post": "Come on England",
-      "category": "sports",
-      "username": "Saba Mchedlishvili",
-      "clicks": 0,
-      "userId": 1,
-      "comments": []
-    },
-    {
-      "title": "Real Madrid",
-      "post": "Real madrid is the best team i the world!",
+      "title": "World Cup 2022",
+      "post": "World caup date?",
       "category": "sports",
       "username": "George Brown",
       "clicks": 0,
@@ -109,48 +40,14 @@
       "id": 2
     },
     {
-      "title": "Nba",
-      "post": "am i the best playe?",
+      "title": "Liverpool Vs Napoli",
+      "post": "Lets discuss about liverpool/napoli game in champions leaguea group stage",
       "category": "sports",
-      "username": "Klay Thompson",
+      "username": "Saba Mchedlishvili",
       "clicks": 0,
       "comments": [],
-      "userId": 3,
+      "userId": 1,
       "id": 3
     }
-  ],
-  "medicine": [
-    {
-      "title": "Blood",
-      "post": "What is good % air in our blood",
-      "category": "medicine",
-      "username": "Saba Mchedlishvili",
-      "id": 1,
-      "userId": 1,
-      "clicks": 0
-    }
-  ],
-  "history": [],
-  "programming": [
-    {
-      "id": 1,
-      "title": "Html",
-      "post": "Is Html Programming Language?",
-      "category": "programming",
-      "userId": 1,
-      "username": "Saba Mchedlishvili",
-      "clicks": 0
-    },
-    {
-      "title": "Terrance",
-      "post": "Parker",
-      "category": "programming",
-      "username": "Klay Thompson",
-      "clicks": 0,
-      "comments": [],
-      "userId": 3,
-      "id": 2
-    }
-  ],
-  "other": []
+  ]
 }

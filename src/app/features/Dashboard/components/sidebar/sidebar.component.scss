@@ -6,7 +6,11 @@
   align-items: center;
   justify-content: flex-start;
   padding-top: 25px;
-  border-radius: 7px;
+  position: fixed;
+  height: 100%;
+  top: 60px;
+  left: 0;
+
 
 
   & > div {
