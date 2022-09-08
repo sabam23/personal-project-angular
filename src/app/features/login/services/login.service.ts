@@ -30,6 +30,10 @@ export class LoginService {
     return this.http.get<User>(`${this.baseUrl}users/${id}`);
   }
 
+  updateData(id:number, payload: User) {
+    return this.http.put(`${this.baseUrl}users/${id}`,payload);
+  }
+
   getFullData(): Observable<User[]> {
     return this.http.get<User[]>(`${this.baseUrl}users`);
   }

@@ -7,4 +7,5 @@ export interface StudentForm{
   email: FormControl<string>;
   password: FormControl<string>;
   repeatPassword: FormControl<string>;
+  userPosts: FormControl
 }

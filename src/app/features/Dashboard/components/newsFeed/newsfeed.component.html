@@ -1,7 +1,7 @@
 <div class="news-feed">
   <app-sidebar></app-sidebar>
   <div class="post-container">
-    <a (click)="question=true" *ngIf="!question">Ask new Post.</a>
+    <a (click)="question=true" *ngIf="!question">Add new Post.</a>
     <div class="post-form" *ngIf="question">
         <form [formGroup]="postForm">
           <label>
@@ -23,5 +23,17 @@
           <a (click)="question=false">Close</a>
         </form>
     </div>
+    <div class="newsFeedPosts">
+        <div *ngFor="let post of posts$ | async">
+          <div class="post-item">
+            <div>{{post.username}}</div>
+            <div>{{ post.title }}</div>
+            <div>{{ post.post }}</div>
+            <div>Clicked {{post.clicks}} times</div>
+          </div>
+        </div>
+    </div>
   </div>
 </div>
+
+<router-outlet></router-outlet>

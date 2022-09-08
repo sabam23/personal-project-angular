@@ -14,14 +14,14 @@ export class PostService {
   private baseUrl = 'http://localhost:3000/';
 
   addPost(payload: Post,category: string) {
-    return this.http.post(`${this.baseUrl}${category}`,payload);
+    return this.http.post<Post>(`${this.baseUrl}${category}`,payload);
   }
 
-  getStudentData(id: number): Observable<User> {
-    return this.http.get<User>(`${this.baseUrl}users/${id}`);
+  getUserPosts(id: number): Observable<Post[]> {
+    return this.http.get<Post[]>(`${this.baseUrl}allPosts?userId=${id}`);
   }
 
-  getFullData(): Observable<User[]> {
-    return this.http.get<User[]>(`${this.baseUrl}users`);
+  getFullData(): Observable<Post[]> {
+    return this.http.get<Post[]>(`${this.baseUrl}allPosts`);
   }
 }

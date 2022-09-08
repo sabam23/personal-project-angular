@@ -17,38 +17,74 @@
       "password": "1234567",
       "repeatPassword": "1234567",
       "id": 2
+    },
+    {
+      "firstname": "Klay",
+      "lastname": "Thompson",
+      "age": 28,
+      "email": "tray@gmail.com",
+      "password": "traytray",
+      "repeatPassword": "traytray",
+      "id": 3
     }
   ],
   "allPosts": [
     {
       "id": 1,
-      "title": "Html",
-      "post": "Is Html Programming Language?",
-      "category": "programming"
-    },
-    {
-      "id": 2,
       "title": "Football",
       "post": "Come on England",
-      "category": "sports"
-    },
-    {
-      "title": "Ronaldo",
-      "post": "Ronaldo is the best football player!",
       "category": "sports",
-      "id": 3
+      "username": "Saba Mchedlishvili",
+      "userId": 1,
+      "clicks": 0
     },
     {
-      "title": "Angular",
-      "post": "what does angular async pipe does?",
+      "title": "Blood",
+      "post": "What is good % air in our blood",
+      "category": "medicine",
+      "username": "Saba Mchedlishvili",
+      "id": 2,
+      "userId": 1,
+      "clicks": 0
+    },
+    {
+      "id": 3,
+      "title": "Html",
+      "post": "Is Html Programming Language?",
       "category": "programming",
+      "username": "Saba Mchedlishvili",
+      "userId": 1,
+      "clicks": 0
+    },
+    {
+      "title": "Real Madrid",
+      "post": "Real madrid is the best team i the world!",
+      "category": "sports",
+      "username": "George Brown",
+      "clicks": 0,
+      "comments": [],
+      "userId": 2,
       "id": 4
     },
     {
-      "title": "Temp",
-      "post": "What is good temp for cats?",
-      "category": "medicine",
+      "title": "Nba",
+      "post": "am i the best playe?",
+      "category": "sports",
+      "username": "Klay Thompson",
+      "clicks": 0,
+      "comments": [],
+      "userId": 3,
       "id": 5
+    },
+    {
+      "title": "Terrance",
+      "post": "Parker",
+      "category": "programming",
+      "username": "Klay Thompson",
+      "clicks": 0,
+      "comments": [],
+      "userId": 3,
+      "id": 6
     }
   ],
   "sports": [
@@ -56,13 +92,31 @@
       "id": 1,
       "title": "Football",
       "post": "Come on England",
-      "category": "sports"
+      "category": "sports",
+      "username": "Saba Mchedlishvili",
+      "clicks": 0,
+      "userId": 1,
+      "comments": []
     },
     {
-      "title": "Ronaldo",
-      "post": "Ronaldo is the best football player!",
+      "title": "Real Madrid",
+      "post": "Real madrid is the best team i the world!",
       "category": "sports",
+      "username": "George Brown",
+      "clicks": 0,
+      "comments": [],
+      "userId": 2,
       "id": 2
+    },
+    {
+      "title": "Nba",
+      "post": "am i the best playe?",
+      "category": "sports",
+      "username": "Klay Thompson",
+      "clicks": 0,
+      "comments": [],
+      "userId": 3,
+      "id": 3
     }
   ],
   "medicine": [
@@ -70,13 +124,10 @@
       "title": "Blood",
       "post": "What is good % air in our blood",
       "category": "medicine",
-      "id": 1
-    },
-    {
-      "title": "Temp",
-      "post": "What is good temp for cats?",
-      "category": "medicine",
-      "id": 2
+      "username": "Saba Mchedlishvili",
+      "id": 1,
+      "userId": 1,
+      "clicks": 0
     }
   ],
   "history": [],
@@ -85,12 +136,19 @@
       "id": 1,
       "title": "Html",
       "post": "Is Html Programming Language?",
-      "category": "programming"
+      "category": "programming",
+      "userId": 1,
+      "username": "Saba Mchedlishvili",
+      "clicks": 0
     },
     {
-      "title": "Angular",
-      "post": "what does angular async pipe does?",
+      "title": "Terrance",
+      "post": "Parker",
       "category": "programming",
+      "username": "Klay Thompson",
+      "clicks": 0,
+      "comments": [],
+      "userId": 3,
       "id": 2
     }
   ],

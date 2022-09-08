@@ -1,0 +1,8 @@
+<div *ngFor="let post of posts | async" class="posts">
+  <div>
+    <div>{{post.username}}</div>
+    <div>{{post.title}}</div>
+    <div>{{post.post}}</div>
+    <div>Clicked{{ post.clicks}} times</div>
+  </div>
+</div>

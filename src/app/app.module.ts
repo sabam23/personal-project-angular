@@ -14,6 +14,7 @@ import { SidebarComponent } from './features/Dashboard/components/sidebar/sideba
 import {CommonModule} from "@angular/common";
 import { NotfoundComponent } from './features/notfoundPage/components/notfound.component';
 import {NewsFeedComponent} from "./features/Dashboard/components/newsFeed/newsfeed.component";
+import { UserpageComponent } from './features/UserPage/components/userpage.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {NewsFeedComponent} from "./features/Dashboard/components/newsFeed/newsfe
     LoginComponent,
     NewsFeedComponent ,
     SidebarComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    UserpageComponent
   ],
   imports: [
     BrowserModule,

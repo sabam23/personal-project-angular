@@ -49,7 +49,6 @@ export class LoginComponent implements OnInit {
   }
 
   login(): void {
-
     for (let user of this.usersArray) {
       if (this.loginForm.get('email')?.value === user.email) {
         if (user.password === this.loginForm.get('password')?.value) {

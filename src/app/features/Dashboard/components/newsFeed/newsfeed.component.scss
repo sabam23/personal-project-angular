@@ -20,6 +20,7 @@
       color: black;
       padding-bottom: 5px;
       cursor: pointer;
+      margin-bottom: 20px;
       &:hover {
         border-bottom: solid red 2px;
       }
@@ -31,6 +32,7 @@
       border: solid lightgrey 1px;
       border-radius: 5px;
       box-shadow: 5px 5px 5px 5px gray;
+      margin-bottom: 50px;
 
       & > form {
         display: flex;
@@ -104,5 +106,15 @@
       }
       }
     }
+  }
+}
+
+.newsFeedPosts {
+  width: 100%;
+
+  & .post-item {
+    margin: auto;
+    width: 1000px;
+    border: solid 1px gray;
   }
 }
