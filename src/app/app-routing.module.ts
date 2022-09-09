@@ -20,6 +20,10 @@ const routes: Routes = [
     loadChildren: () =>  import('./features/postDetail/postDetail.module').then(m => m.PostDetailModule)
   },
   {
+    path: 'data/:postId',
+    loadChildren: () =>  import('./features/Dashboard/components/user-posts/userPosts.module').then(m => m.UserPostsModule)
+  },
+  {
     path: 'sports',
     loadChildren: () =>  import('./features/Dashboard/components/sports/sports.module').then(m => m.SportsModule)
   },

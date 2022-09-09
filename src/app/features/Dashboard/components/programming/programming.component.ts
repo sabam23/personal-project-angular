@@ -11,7 +11,7 @@ import {PostService} from "../../../shared/services/post.service";
 })
 export class ProgrammingComponent implements OnInit {
 
-  constructor(private postService: PostService) { }
+  constructor(public postService: PostService) { }
 
   public posts = new BehaviorSubject<Post[]>([] as Post[]);
 

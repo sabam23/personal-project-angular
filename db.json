@@ -43,7 +43,7 @@
       "post": "How to generate angular component with one cli command?",
       "category": "programming",
       "username": "George Brown",
-      "clicks": 18,
+      "clicks": 24,
       "comments": [
         {
           "username": "Saba Mchedlishvili",
@@ -62,7 +62,7 @@
       "post": "Lets recall the greatest nba seasons.",
       "category": "sports",
       "username": "George Brown",
-      "clicks": 57,
+      "clicks": 82,
       "comments": [
         {
           "username": "Saba Mchedlishvili",
@@ -71,6 +71,10 @@
         {
           "username": "Jenson Button",
           "comment": "For me 1997 season is wildest!"
+        },
+        {
+          "username": "Klay Thompson",
+          "comment": "2022 Lets Go warriors !!!"
         }
       ],
       "userId": 2,
@@ -81,7 +85,7 @@
       "post": "Is the hyper text markup language the real programming language?",
       "category": "programming",
       "username": "George Brown",
-      "clicks": 10,
+      "clicks": 16,
       "comments": [
         {
           "username": "Saba Mchedlishvili",
@@ -100,7 +104,7 @@
       "post": "Why Cristiano Ronaldo playing in Europe League in this season ?",
       "category": "sports",
       "username": "George Brown",
-      "clicks": 4,
+      "clicks": 5,
       "comments": [],
       "userId": 2,
       "id": 8
@@ -110,27 +114,30 @@
       "post": "Georgian Basketball team is out of Eurobasket 2022 ",
       "category": "sports",
       "username": "Saba Mchedlishvili",
-      "clicks": 3,
-      "comments": [],
+      "clicks": 10,
+      "comments": [
+        {
+          "username": "George Brown",
+          "comment": ":("
+        },
+        {
+          "username": "Jenson Button",
+          "comment": "Still a better performance than this project"
+        },
+        {
+          "username": "Saba Mchedlishvili",
+          "comment": "assas"
+        }
+      ],
       "userId": 1,
       "id": 10
-    },
-    {
-      "title": "PHP",
-      "post": "Php is dead programming language. Change my mind!",
-      "category": "programming",
-      "username": "Saba Mchedlishvili",
-      "clicks": 3,
-      "comments": [],
-      "userId": 1,
-      "id": 11
     },
     {
       "title": "Battle Of Didgori",
       "post": "Lets discuss about battle of didgori !!!",
       "category": "history",
       "username": "Saba Mchedlishvili",
-      "clicks": 6,
+      "clicks": 9,
       "comments": [
         {
           "username": "Klay Thompson",
@@ -149,25 +156,12 @@
       "id": 13
     },
     {
-      "title": "Tepm",
-      "post": "Normal temp range for human being please!",
+      "title": "Temp",
+      "post": "Normal temperature range for human being please!",
       "category": "medicine",
       "username": "Klay Thompson",
-      "clicks": 11,
-      "comments": [
-        {
-          "username": "George Brown",
-          "comment": "36.0 - 37.0"
-        },
-        {
-          "username": "Klay Thompson",
-          "comment": "Thanks!"
-        },
-        {
-          "username": "George Brown",
-          "comment": "You're welcome!"
-        }
-      ],
+      "clicks": 1,
+      "comments": [],
       "userId": 3,
       "id": 14
     },
@@ -176,39 +170,60 @@
       "post": "Do you think World war  3 will start in nearest future?",
       "category": "history",
       "username": "Jenson Button",
-      "clicks": 1,
-      "comments": [],
+      "clicks": 4,
+      "comments": [
+        {
+          "username": "Klay Thompson",
+          "comment": "Nope"
+        },
+        {
+          "username": "George Brown",
+          "comment": "Yes fs"
+        }
+      ],
       "userId": 4,
       "id": 15
     },
     {
-      "title": "Other",
-      "post": "test other",
+      "title": "Car",
+      "post": "Tell us about your dream car",
       "category": "other",
-      "username": "George Brown",
-      "clicks": 3,
+      "username": "Jenson Button",
+      "clicks": 9,
       "comments": [
         {
-          "username": "George Brown",
-          "comment": "other"
+          "username": "Jenson Button",
+          "comment": "Mine is Ferrari"
+        },
+        {
+          "username": "Saba Mchedlishvili",
+          "comment": "Lamborghini"
         }
       ],
-      "userId": 2,
+      "userId": 4,
       "id": 16
     },
     {
-      "title": "other test2",
-      "post": "other test2",
+      "title": "Project",
+      "post": "Do you like this project? I don't :)",
       "category": "other",
-      "username": "George Brown",
-      "clicks": 2,
+      "username": "Klay Thompson",
+      "clicks": 4,
       "comments": [
         {
+          "username": "Saba Mchedlishvili",
+          "comment": "NO NO "
+        },
+        {
           "username": "George Brown",
-          "comment": "1"
+          "comment": "Its awful"
+        },
+        {
+          "username": "Jenson Button",
+          "comment": "Nothing special in this project"
         }
       ],
-      "userId": 2,
+      "userId": 3,
       "id": 17
     }
   ]

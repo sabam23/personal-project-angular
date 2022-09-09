@@ -13,6 +13,7 @@ import {LogPageGuard} from "./core/guards/log-page.guard";
 import {CommonModule} from "@angular/common";
 import { NotfoundComponent } from './features/notfoundPage/components/notfound.component';
 import {SharedModule} from "./shared/shared.module";
+import { UserPostsComponent } from './features/Dashboard/components/user-posts/user-posts.component';
 
 @NgModule({
   declarations: [

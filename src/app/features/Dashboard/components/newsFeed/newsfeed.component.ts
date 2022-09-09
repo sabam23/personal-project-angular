@@ -18,6 +18,8 @@ export class NewsFeedComponent implements OnInit {
 
   public posts$: BehaviorSubject<Post[]> = new BehaviorSubject<Post[]>([] as Post[]);
 
+  searchForm = new FormControl('');
+
   ngOnInit(): void {
     this.loadData();
     this.loginService.currentUsername.subscribe();

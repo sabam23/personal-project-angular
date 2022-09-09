@@ -31,5 +31,4 @@ export class SportsComponent implements OnInit {
       tap(response => this.posts.next(response))
     ).subscribe();
   }
-
 }

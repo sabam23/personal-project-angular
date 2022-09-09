@@ -138,3 +138,9 @@
 .ng-invalid:not(form).ng-touched {
   box-shadow: lightcoral 10px 10px;
 }
+
+@media screen and (max-width: 520px) {
+  .auth-container {
+    width: 300px;
+  }
+}

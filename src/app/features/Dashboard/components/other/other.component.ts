@@ -11,7 +11,7 @@ import {Post} from "../../../shared/interfaces/post.interface";
 })
 export class OtherComponent implements OnInit {
 
-  constructor(private postService: PostService) { }
+  constructor(public postService: PostService) { }
 
   public posts = new BehaviorSubject<Post[]>([] as Post[]);
 

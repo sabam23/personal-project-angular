@@ -1,6 +1,7 @@
 .newsFeedPosts {
-  width: 100%;
+  width: 1000px;
   border-radius: 15px;
+  margin: auto;
 
   & .news-header {
     width: 100%;
@@ -21,7 +22,7 @@
 
   & .post-item {
     margin: 20px auto;
-    width: 800px;
+    width: 90%;
     background: #161e2e;
     border-radius: 20px;
     color: white;
@@ -34,6 +35,7 @@
       font-size: 17px;
       text-align: right;
       padding: 5px 15px;
+      cursor: pointer;
     }
 
     & .title {
@@ -57,7 +59,7 @@
       display: flex;
       flex-direction: row;
       column-gap: 10px;
-      width: 790px;
+      width: 90%;
       justify-content: space-around;
       margin-bottom: 10px;
       font-family: 'Raleway', sans-serif;
@@ -157,5 +159,35 @@
       padding: 0 8px;
       font-size: 17px;
     }
+  }
+}
+
+@media screen and (max-width: 1391px) {
+  .newsFeedPosts {
+      width: 700px;
+  }
+}
+
+@media screen and (max-width: 809px) {
+  .news-header {
+    width: 70%;
+  }
+  .newsFeedPosts {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 713px) {
+  .post-form {
+    width: 300px;
+  }
+  .post-container {
+    width: 300px;
+  }
+  .news-header {
+    width: 320px;
+  }
+  .newsFeedPosts {
+    width: 350px;
   }
 }

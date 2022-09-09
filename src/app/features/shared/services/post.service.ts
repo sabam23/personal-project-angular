@@ -11,6 +11,7 @@ export class PostService {
   constructor(private http: HttpClient) { }
 
   public postId = 0;
+  public userID = 0;
   private baseUrl = 'http://localhost:3004/';
 
   addPost(payload: Post) {
