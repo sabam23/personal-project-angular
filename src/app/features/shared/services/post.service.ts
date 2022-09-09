@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {User} from "../interfaces/user.interface";
 import {Post} from "../interfaces/post.interface";
 
 @Injectable({
@@ -26,6 +25,10 @@ export class PostService {
     return this.http.get<Post[]>(`${this.baseUrl}posts?userId=${id}`);
   }
 
+  getCategoryPosts(category: string): Observable<Post[]> {
+    return this.http.get<Post[]>(`${this.baseUrl}posts?category=${category}`);
+  }
+
   getPost(id:number): Observable<Post> {
     return this.http.get<Post>(`${this.baseUrl}posts/${id}`);
   }
@@ -35,6 +38,6 @@ export class PostService {
   }
 
   getFullData(): Observable<Post[]> {
-    return this.http.get<Post[]>(`${this.baseUrl}posts`);
+    return this.http.get<Post[]>(`${this.baseUrl}posts?_sort=clicks&_order=desc`);
   }
 }

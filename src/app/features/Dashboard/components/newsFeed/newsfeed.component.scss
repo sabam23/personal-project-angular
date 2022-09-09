@@ -14,6 +14,16 @@
     align-items: center;
     justify-content: center;
 
+    & .post-form {
+      width: 600px;
+      height: 320px;
+      box-shadow: 5px 5px 5px 5px gray;
+      border: solid lightgrey 1px;
+      border-radius: 15px;
+      margin: 20px auto;
+      background: #292f33;
+    }
+
     &>a {
       font-family: 'Raleway', sans-serif;
       font-size: 18px;

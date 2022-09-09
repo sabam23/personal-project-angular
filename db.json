@@ -26,6 +26,15 @@
       "password": "traytray",
       "repeatPassword": "traytray",
       "id": 3
+    },
+    {
+      "firstname": "Jenson",
+      "lastname": "Button",
+      "age": 24,
+      "email": "jenson@gmail.com",
+      "password": "jenjen1",
+      "repeatPassword": "jenjen1",
+      "id": 4
     }
   ],
   "posts": [
@@ -34,7 +43,7 @@
       "post": "How to generate angular component with one cli command?",
       "category": "programming",
       "username": "George Brown",
-      "clicks": 12,
+      "clicks": 18,
       "comments": [
         {
           "username": "Saba Mchedlishvili",
@@ -53,11 +62,15 @@
       "post": "Lets recall the greatest nba seasons.",
       "category": "sports",
       "username": "George Brown",
-      "clicks": 51,
+      "clicks": 57,
       "comments": [
         {
           "username": "Saba Mchedlishvili",
           "comment": "The best season 2016!! Go Cavs"
+        },
+        {
+          "username": "Jenson Button",
+          "comment": "For me 1997 season is wildest!"
         }
       ],
       "userId": 2,
@@ -68,7 +81,7 @@
       "post": "Is the hyper text markup language the real programming language?",
       "category": "programming",
       "username": "George Brown",
-      "clicks": 9,
+      "clicks": 10,
       "comments": [
         {
           "username": "Saba Mchedlishvili",
@@ -87,7 +100,7 @@
       "post": "Why Cristiano Ronaldo playing in Europe League in this season ?",
       "category": "sports",
       "username": "George Brown",
-      "clicks": 2,
+      "clicks": 4,
       "comments": [],
       "userId": 2,
       "id": 8
@@ -97,7 +110,7 @@
       "post": "Georgian Basketball team is out of Eurobasket 2022 ",
       "category": "sports",
       "username": "Saba Mchedlishvili",
-      "clicks": 2,
+      "clicks": 3,
       "comments": [],
       "userId": 1,
       "id": 10
@@ -117,7 +130,7 @@
       "post": "Lets discuss about battle of didgori !!!",
       "category": "history",
       "username": "Saba Mchedlishvili",
-      "clicks": 4,
+      "clicks": 6,
       "comments": [
         {
           "username": "Klay Thompson",
@@ -126,6 +139,10 @@
         {
           "username": "Saba Mchedlishvili",
           "comment": "1121"
+        },
+        {
+          "username": "George Brown",
+          "comment": "Muslim Slayers !!!"
         }
       ],
       "userId": 1,
@@ -136,7 +153,7 @@
       "post": "Normal temp range for human being please!",
       "category": "medicine",
       "username": "Klay Thompson",
-      "clicks": 9,
+      "clicks": 11,
       "comments": [
         {
           "username": "George Brown",
@@ -153,6 +170,46 @@
       ],
       "userId": 3,
       "id": 14
+    },
+    {
+      "title": "World War 3",
+      "post": "Do you think World war  3 will start in nearest future?",
+      "category": "history",
+      "username": "Jenson Button",
+      "clicks": 1,
+      "comments": [],
+      "userId": 4,
+      "id": 15
+    },
+    {
+      "title": "Other",
+      "post": "test other",
+      "category": "other",
+      "username": "George Brown",
+      "clicks": 3,
+      "comments": [
+        {
+          "username": "George Brown",
+          "comment": "other"
+        }
+      ],
+      "userId": 2,
+      "id": 16
+    },
+    {
+      "title": "other test2",
+      "post": "other test2",
+      "category": "other",
+      "username": "George Brown",
+      "clicks": 2,
+      "comments": [
+        {
+          "username": "George Brown",
+          "comment": "1"
+        }
+      ],
+      "userId": 2,
+      "id": 17
     }
   ]
 }

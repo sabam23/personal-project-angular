@@ -1,7 +1,10 @@
 <div class="side-bar">
   <div routerLink="/forum" routerLinkActive="active-link">Home</div>
   <div routerLink="/user" routerLinkActive="active-link">My Posts</div>
-  <div>Rating</div>
-  <div>Statements</div>
+  <div routerLink="/sports" routerLinkActive="active-link">Sports</div>
+  <div routerLink="/history" routerLinkActive="active-link">History</div>
+  <div routerLink="/programming" routerLinkActive="active-link">Programming</div>
+  <div routerLink="/medicine" routerLinkActive="active-link">Medicine</div>
+  <div routerLink="/other" routerLinkActive="active-link">Other</div>
   <div (click)="loginService.isLoggedIn = false; loginService.username.next('');" routerLink="/" id="logout">Log Out</div>
 </div>

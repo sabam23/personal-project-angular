@@ -12,10 +12,6 @@ import {LoginGuard} from "./core/guards/login.guard";
 import {LogPageGuard} from "./core/guards/log-page.guard";
 import {CommonModule} from "@angular/common";
 import { NotfoundComponent } from './features/notfoundPage/components/notfound.component';
-import { UserpageComponent } from './features/UserPage/components/userpage.component';
-import {PostDetailComponent} from "./features/postDetail/components/post-detail.component";
-import {DashboardModule} from "./features/Dashboard/components/newsFeed/dashboard.module";
-import {SidebarComponent} from "./features/shared/components/sidebar/sidebar.component";
 import {SharedModule} from "./shared/shared.module";
 
 @NgModule({

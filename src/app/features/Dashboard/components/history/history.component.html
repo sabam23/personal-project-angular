@@ -1,0 +1,17 @@
+<app-sidebar></app-sidebar>
+<div class="newsFeedPosts">
+  <div class="news-header">
+    <p>History</p>
+  </div>
+  <div *ngFor="let post of posts | async">
+    <div class="post-item">
+      <div class="username">{{post.username}}</div>
+      <div class="title">{{ post.title }}</div>
+      <div class="post">{{ post.post }}</div>
+      <div class="footer">
+        <div class="click">Clicked {{post.clicks}} times</div>
+        <a [routerLink]="['/forum', post.id]" (click)="expand(post.id)">See Full Discussion</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,9 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './features/login/components/login.component';
 import {LogPageGuard} from "./core/guards/log-page.guard";
 import {NotfoundComponent} from "./features/notfoundPage/components/notfound.component";
-import {LoginGuard} from "./core/guards/login.guard";
-import {UserpageComponent} from "./features/UserPage/components/userpage.component";
-import {PostDetailComponent} from "./features/postDetail/components/post-detail.component";
 
 const routes: Routes = [
   {
@@ -21,6 +18,26 @@ const routes: Routes = [
   {
     path: 'forum/:postId',
     loadChildren: () =>  import('./features/postDetail/postDetail.module').then(m => m.PostDetailModule)
+  },
+  {
+    path: 'sports',
+    loadChildren: () =>  import('./features/Dashboard/components/sports/sports.module').then(m => m.SportsModule)
+  },
+  {
+    path: 'history',
+    loadChildren: () =>  import('./features/Dashboard/components/history/history.module').then(m => m.HistoryModule)
+  },
+  {
+    path: 'programming',
+    loadChildren: () =>  import('./features/Dashboard/components/programming/programming.module').then(m => m.ProgrammingModule)
+  },
+  {
+    path: 'medicine',
+    loadChildren: () =>  import('./features/Dashboard/components/medicine/medicine.module').then(m => m.MedicineModule)
+  },
+  {
+    path: 'other',
+    loadChildren: () =>  import('./features/Dashboard/components/other/other.module').then(m => m.OtherModule)
   },
   {
     path: 'user',
