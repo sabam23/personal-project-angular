@@ -1,3 +1,5 @@
+import {Comment} from "../../postDetail/interfaces/comment.interface";
+
 export interface Post {
   username: string;
   title: string;
@@ -5,6 +7,6 @@ export interface Post {
   post: string;
   category: string;
   clicks: number;
-  comments: [];
+  comments: Comment[];
   userId: number;
 }

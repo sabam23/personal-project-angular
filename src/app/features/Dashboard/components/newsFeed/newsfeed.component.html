@@ -1,5 +1,4 @@
 <app-sidebar></app-sidebar>
-<app-userinfo></app-userinfo>
 <div class="news-feed">
   <div class="post-container">
     <a (click)="question=true" *ngIf="!question">Add new Post.</a>
@@ -20,7 +19,7 @@
               <option value="other">Other</option>
             </select>
           </label>
-          <button class="askBtn" type="button" (click)="addPost(postForm.get('category')?.value)">ADD POST</button>
+          <button class="askBtn" type="button" (click)="addPost()">ADD POST</button>
           <a (click)="question=false">Close</a>
         </form>
     </div>
@@ -35,7 +34,7 @@
             <div class="post">{{ post.post }}</div>
             <div class="footer">
               <div class="click">Clicked {{post.clicks}} times</div>
-              <a>See Full Discussion</a>
+              <a [routerLink]="['/forum', post.id]" (click)="expand(post.id)">See Full Discussion</a>
             </div>
           </div>
         </div>

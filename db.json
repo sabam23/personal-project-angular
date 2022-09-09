@@ -30,24 +30,129 @@
   ],
   "posts": [
     {
-      "title": "World Cup 2022",
-      "post": "World caup date?",
-      "category": "sports",
+      "title": "Angular Cli",
+      "post": "How to generate angular component with one cli command?",
+      "category": "programming",
       "username": "George Brown",
-      "clicks": 0,
-      "comments": [],
+      "clicks": 12,
+      "comments": [
+        {
+          "username": "Saba Mchedlishvili",
+          "comment": "Ng g c --component name"
+        },
+        {
+          "username": "George Brown",
+          "comment": "ng generate component component-name"
+        }
+      ],
       "userId": 2,
-      "id": 2
+      "id": 4
     },
     {
-      "title": "Liverpool Vs Napoli",
-      "post": "Lets discuss about liverpool/napoli game in champions leaguea group stage",
+      "title": "Nba Best season",
+      "post": "Lets recall the greatest nba seasons.",
+      "category": "sports",
+      "username": "George Brown",
+      "clicks": 51,
+      "comments": [
+        {
+          "username": "Saba Mchedlishvili",
+          "comment": "The best season 2016!! Go Cavs"
+        }
+      ],
+      "userId": 2,
+      "id": 5
+    },
+    {
+      "title": "Html",
+      "post": "Is the hyper text markup language the real programming language?",
+      "category": "programming",
+      "username": "George Brown",
+      "clicks": 9,
+      "comments": [
+        {
+          "username": "Saba Mchedlishvili",
+          "comment": "No Html is markup language not programming!!!"
+        },
+        {
+          "username": "Saba Mchedlishvili",
+          "comment": "!!!"
+        }
+      ],
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "title": "Europe League",
+      "post": "Why Cristiano Ronaldo playing in Europe League in this season ?",
+      "category": "sports",
+      "username": "George Brown",
+      "clicks": 2,
+      "comments": [],
+      "userId": 2,
+      "id": 8
+    },
+    {
+      "title": "Georgia",
+      "post": "Georgian Basketball team is out of Eurobasket 2022 ",
       "category": "sports",
       "username": "Saba Mchedlishvili",
-      "clicks": 0,
+      "clicks": 2,
       "comments": [],
       "userId": 1,
-      "id": 3
+      "id": 10
+    },
+    {
+      "title": "PHP",
+      "post": "Php is dead programming language. Change my mind!",
+      "category": "programming",
+      "username": "Saba Mchedlishvili",
+      "clicks": 3,
+      "comments": [],
+      "userId": 1,
+      "id": 11
+    },
+    {
+      "title": "Battle Of Didgori",
+      "post": "Lets discuss about battle of didgori !!!",
+      "category": "history",
+      "username": "Saba Mchedlishvili",
+      "clicks": 4,
+      "comments": [
+        {
+          "username": "Klay Thompson",
+          "comment": null
+        },
+        {
+          "username": "Saba Mchedlishvili",
+          "comment": "1121"
+        }
+      ],
+      "userId": 1,
+      "id": 13
+    },
+    {
+      "title": "Tepm",
+      "post": "Normal temp range for human being please!",
+      "category": "medicine",
+      "username": "Klay Thompson",
+      "clicks": 9,
+      "comments": [
+        {
+          "username": "George Brown",
+          "comment": "36.0 - 37.0"
+        },
+        {
+          "username": "Klay Thompson",
+          "comment": "Thanks!"
+        },
+        {
+          "username": "George Brown",
+          "comment": "You're welcome!"
+        }
+      ],
+      "userId": 3,
+      "id": 14
     }
   ]
 }

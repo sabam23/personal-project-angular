@@ -11,8 +11,6 @@
   top: 60px;
   left: 0;
 
-
-
   & > div {
     width: 90%;
     height: 45px;
@@ -34,4 +32,8 @@
       background: #161e2e;
     }
   }
+}
+.active-link {
+  border-right: solid red 5px;
+  background: #161e2e;
 }

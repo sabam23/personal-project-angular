@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {passwordValidator} from "../../../core/validators/password.validator";
 import {StudentForm} from "../interfaces/userform.interface";
-import {LoginService} from "../services/login.service";
-import {User} from "../interfaces/user.interface";
+import {LoginService} from "../../shared/services/login.service";
+import {User} from "../../shared/interfaces/user.interface";
 import {LoginForm} from "../interfaces/loginForm.interface";
 import {Router} from "@angular/router";
 

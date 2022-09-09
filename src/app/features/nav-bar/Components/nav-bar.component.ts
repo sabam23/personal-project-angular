@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import {LoginService} from "../../login/services/login.service";
+import {LoginService} from "../../shared/services/login.service";
 
 @Component({
   selector: 'app-nav-bar',

@@ -1,5 +1,6 @@
 <div class="side-bar">
-  <div routerLink="/user">My Posts</div>
+  <div routerLink="/forum" routerLinkActive="active-link">Home</div>
+  <div routerLink="/user" routerLinkActive="active-link">My Posts</div>
   <div>Rating</div>
   <div>Statements</div>
   <div (click)="loginService.isLoggedIn = false; loginService.username.next('');" routerLink="/" id="logout">Log Out</div>

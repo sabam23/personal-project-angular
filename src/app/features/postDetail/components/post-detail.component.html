@@ -1,0 +1,30 @@
+<app-sidebar></app-sidebar>
+<div class="newsFeedPosts">
+  <div class="news-header">
+    <p>Post</p>
+  </div>
+  <div>
+    <div class="post-item">
+      <div class="username">{{post.username}}</div>
+      <div class="title">{{ post.title }}</div>
+      <div class="post">{{ post.post }}</div>
+      <div class="footer">
+        <div class="click">Clicked {{post.clicks}} times</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="comments">
+  <div class="comment-form">
+    <form [formGroup]="commentForm">
+      <input formControlName="comment" type="text" placeholder="Enter Comment">
+      <button type="button" (click)="addComment()">Add Comment</button>
+    </form>
+  </div>
+  <div class="header">Comments</div>
+  <div *ngFor="let comment of comments" class="comments-bar">
+    <div class="username">{{comment.username}}</div>
+    <div class="post">{{comment.comment}}</div>
+  </div>
+</div>v

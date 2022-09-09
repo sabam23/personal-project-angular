@@ -3,9 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './features/login/components/login.component';
 import {LogPageGuard} from "./core/guards/log-page.guard";
 import {NotfoundComponent} from "./features/notfoundPage/components/notfound.component";
-import {NewsFeedComponent} from "./features/Dashboard/components/newsFeed/newsfeed.component";
 import {LoginGuard} from "./core/guards/login.guard";
 import {UserpageComponent} from "./features/UserPage/components/userpage.component";
+import {PostDetailComponent} from "./features/postDetail/components/post-detail.component";
 
 const routes: Routes = [
   {
@@ -19,15 +19,18 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'forum',
-    component: NewsFeedComponent,
-    canActivate: [LoginGuard]
+    path: 'forum/:postId',
+    loadChildren: () =>  import('./features/postDetail/postDetail.module').then(m => m.PostDetailModule)
   },
   {
     path: 'user',
-    component: UserpageComponent,
-    canActivate: [LoginGuard]
+    loadChildren: () =>  import('./features/UserPage/userpage.module').then(m => m.UserPageModule)
   },
+  {
+    path: 'forum',
+    loadChildren: () =>  import('./features/Dashboard/components/newsFeed/dashboard.module').then(m => m.DashboardModule)
+  },
+  { path: 'dashboard', loadChildren: () => import('./features/Dashboard/components/newsFeed/dashboard.module').then(m => m.DashboardModule) },
   {
     path: '**',
     component: NotfoundComponent

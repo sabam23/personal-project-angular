@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {User} from "../../login/interfaces/user.interface";
+import {User} from "../interfaces/user.interface";
 import {Post} from "../interfaces/post.interface";
 
 @Injectable({
@@ -11,14 +11,23 @@ export class PostService {
 
   constructor(private http: HttpClient) { }
 
+  public postId = 0;
   private baseUrl = 'http://localhost:3004/';
 
   addPost(payload: Post) {
     return this.http.post<Post>(`${this.baseUrl}posts`,payload);
   }
 
+  updateData(id:number, payload: Post) {
+    return this.http.put(`${this.baseUrl}posts/${id}`,payload);
+  }
+
   getUserPosts(id: number): Observable<Post[]> {
     return this.http.get<Post[]>(`${this.baseUrl}posts?userId=${id}`);
+  }
+
+  getPost(id:number): Observable<Post> {
+    return this.http.get<Post>(`${this.baseUrl}posts/${id}`);
   }
 
   deletePost(id:number) {

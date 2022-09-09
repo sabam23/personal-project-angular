@@ -1,27 +1,42 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup, Validators} from "@angular/forms";
-import {PostService} from "../../services/post.service";
+import {PostService} from "../../../shared/services/post.service";
 import {PostForm} from "../../interfaces/postForm.interface";
-import {Post} from "../../interfaces/post.interface";
-import {Observable} from "rxjs";
-import {LoginService} from "../../../login/services/login.service";
-import {User} from "../../../login/interfaces/user.interface";
+import {Post} from "../../../shared/interfaces/post.interface";
+import {BehaviorSubject, Observable, tap} from "rxjs";
+import {LoginService} from "../../../shared/services/login.service";
 
 @Component({
   selector: 'app-newsfeed',
   templateUrl: './newsfeed.component.html',
-  styleUrls: ['./newsfeed.component.scss'],
-  // changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./newsfeed.component.scss', '../../../shared/styles/shared.styles.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NewsFeedComponent implements OnInit {
 
-  constructor(private postService: PostService,public loginService: LoginService) { }
+  constructor(public postService: PostService,public loginService: LoginService) { }
 
-  public posts$ = new Observable<Post[]>;
+  public posts$: BehaviorSubject<Post[]> = new BehaviorSubject<Post[]>([] as Post[]);
 
   ngOnInit(): void {
-    this.posts$ = this.postService.getFullData();
+    this.loadData();
     this.loginService.currentUsername.subscribe();
+  }
+
+  expand(id:number): void {
+    let postData: Post;
+    this.postService.postId = id;
+    this.postService.getPost(id).subscribe(data => {
+      postData = data;
+      postData.clicks += 1;
+      this.postService.updateData(id,postData).subscribe()
+    });
+  }
+
+  loadData() {
+    this.postService.getFullData().pipe(
+      tap(response => this.posts$.next(response))
+    ).subscribe();
   }
 
   postForm = new FormGroup<PostForm>(<PostForm>{
@@ -30,14 +45,14 @@ export class NewsFeedComponent implements OnInit {
     category: new FormControl('sports', Validators.required),
   })
 
-  addPost(category: string): void {
+  addPost(): void {
     let formValue = this.postForm.value;
     formValue.username = this.loginService.username.value;
     formValue.clicks = 0;
     formValue.comments = [];
     formValue.userId = this.loginService.loggedId;
-    this.postService.addPost(formValue as Post).subscribe(data => {
-      this.posts$ = this.postService.getFullData();
+    this.postService.addPost(formValue as unknown as Post).subscribe(d => {
+      this.loadData();
     });
     this.question = false;
     formValue = {};

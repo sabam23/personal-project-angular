@@ -1,0 +1,85 @@
+.comments {
+  width: 800px;
+  margin: auto;
+
+  &>.comment-form {
+    height: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &>form {
+      font-size: 17px;
+      font-family: 'Raleway', sans-serif;
+
+      &>input {
+        width: 400px;
+        height: 40px;
+        border: none;
+        border-bottom: solid black 5px;
+        border-radius: 10px;
+        margin-right: 12px;
+      }
+
+      &>button {
+        height: 30px;
+        border: none;
+        background: #48e548;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          background: #67ed67;
+        }
+      }
+    }
+  }
+
+  &>.header {
+    background: #38383f;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  &>.comments-bar {
+    width: 700px;
+    margin: 5px auto;
+    height: 70px;
+    color: white;
+    background: #161e2e;
+    border-radius: 5px;
+  }
+}
+
+.username {
+  font-family: Ubuntu, 'sans-serif';
+  font-size: 17px;
+  text-align: right;
+  padding: 5px 15px;
+}
+
+.title {
+  font-family: Raleway, 'sans-serif';
+  font-size: 25px;
+  color: #ff7b72;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.post {
+  text-align: left;
+  font-size: 18px;
+  padding-left: 10px;
+  color: #a5d6ff;
+  font-family: Raleway, 'sans-serif';
+  margin-bottom: 30px;
+}
+
