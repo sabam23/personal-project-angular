@@ -2,18 +2,18 @@
   width: 800px;
   margin: auto;
 
-  &>.comment-form {
+  & > .comment-form {
     height: 50px;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    &>form {
+    & > form {
       font-size: 17px;
-      font-family: 'Raleway', sans-serif;
+      font-family: "Raleway", sans-serif;
 
-      &>input {
+      & > input {
         width: 400px;
         height: 40px;
         border: none;
@@ -21,7 +21,7 @@
         margin-right: 12px;
       }
 
-      &>button {
+      & > button {
         height: 30px;
         border: none;
         background: #48e548;
@@ -36,9 +36,9 @@
     }
   }
 
-  &>.header {
+  & > .header {
     background: #38383f;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-size: 18px;
     text-align: left;
     height: 40px;
@@ -48,7 +48,7 @@
     padding-left: 10px;
   }
 
-  &>.comments-bar {
+  & > .comments-bar {
     width: 80%;
     margin: 5px auto;
     height: 70px;
@@ -59,14 +59,14 @@
 }
 
 .username {
-  font-family: Ubuntu, 'sans-serif';
+  font-family: Ubuntu, "sans-serif";
   font-size: 17px;
   text-align: right;
   padding: 5px 15px;
 }
 
 .title {
-  font-family: Raleway, 'sans-serif';
+  font-family: Raleway, "sans-serif";
   font-size: 25px;
   color: #ff7b72;
   text-align: center;
@@ -78,14 +78,12 @@
   font-size: 18px;
   padding-left: 10px;
   color: #a5d6ff;
-  font-family: Raleway, 'sans-serif';
+  font-family: Raleway, "sans-serif";
   margin-bottom: 30px;
 }
-
 
 @media screen and (max-width: 809px) {
   .comments {
     width: 400px;
   }
-
 }

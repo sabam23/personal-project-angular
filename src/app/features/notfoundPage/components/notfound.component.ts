@@ -4,13 +4,10 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   selector: 'app-notfound',
   templateUrl: './notfound.component.html',
   styleUrls: ['./notfound.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NotfoundComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

@@ -1,6 +1,6 @@
 .auth-container {
   width: 500px;
-  margin:  60px auto;
+  margin: 60px auto;
   display: flex;
   flex-direction: column;
 
@@ -15,7 +15,7 @@
 
     & > div {
       color: white;
-      font-family: 'Raleway', sans-serif;
+      font-family: "Raleway", sans-serif;
       font-size: 16px;
       font-weight: 600;
       width: 100px;
@@ -31,8 +31,8 @@
     }
   }
 
-  &  .auth-title {
-    font-family: 'Ubuntu', sans-serif;
+  & .auth-title {
+    font-family: "Ubuntu", sans-serif;
     font-size: 40px;
     padding: 25px 0 25px 0;
     border-bottom: solid 1px #dedede;
@@ -46,27 +46,26 @@
     row-gap: 40px;
     justify-content: center;
     align-items: flex-start;
-    font-family: Raleway, 'sans-serif';
+    font-family: Raleway, "sans-serif";
     font-size: 17px;
     margin-top: 25px;
     margin-bottom: 50px;
 
-    & > p > a{
+    & > p > a {
       font-size: 18px;
-      border-bottom:  solid red 2px;
+      border-bottom: solid red 2px;
       padding-bottom: 1px;
       margin-left: 10px;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: "Ubuntu", sans-serif;
       cursor: pointer;
 
       &:hover {
         color: red;
-        border-bottom:  solid black 2px;
+        border-bottom: solid black 2px;
       }
-
     }
 
-    &  input {
+    & input {
       width: 490px;
       height: 40px;
       border: solid #171717 1px;
@@ -97,7 +96,7 @@
       cursor: pointer;
       background: #ee0000;
       color: white;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: "Ubuntu", sans-serif;
 
       &:disabled {
         background: #5c5c6a;

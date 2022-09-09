@@ -6,13 +6,13 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './features/nav-bar/Components/nav-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './features/login/components/login.component';
-import {ReactiveFormsModule} from "@angular/forms";
-import {HttpClientModule} from "@angular/common/http";
-import {LoginGuard} from "./core/guards/login.guard";
-import {LogPageGuard} from "./core/guards/log-page.guard";
-import {CommonModule} from "@angular/common";
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginGuard } from './core/guards/login.guard';
+import { LogPageGuard } from './core/guards/log-page.guard';
+import { CommonModule } from '@angular/common';
 import { NotfoundComponent } from './features/notfoundPage/components/notfound.component';
-import {SharedModule} from "./shared/shared.module";
+import { SharedModule } from './shared/shared.module';
 import { UserPostsComponent } from './features/Dashboard/components/user-posts/user-posts.component';
 
 @NgModule({
@@ -20,7 +20,7 @@ import { UserPostsComponent } from './features/Dashboard/components/user-posts/u
     AppComponent,
     NavBarComponent,
     LoginComponent,
-    NotfoundComponent
+    NotfoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,10 +29,10 @@ import { UserPostsComponent } from './features/Dashboard/components/user-posts/u
     HttpClientModule,
     ReactiveFormsModule,
     CommonModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [LoginGuard, LogPageGuard],
   exports: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

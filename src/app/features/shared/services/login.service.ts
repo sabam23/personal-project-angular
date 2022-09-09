@@ -1,19 +1,17 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {User} from "../interfaces/user.interface";
-import {BehaviorSubject, Observable} from "rxjs";
-
+import { HttpClient } from '@angular/common/http';
+import { User } from '../interfaces/user.interface';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class LoginService {
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   public isLoggedIn: boolean = false;
   private baseUrl = 'http://localhost:3004/';
-  public loggedId:number = 0;
+  public loggedId: number = 0;
 
   username = new BehaviorSubject<string>('');
   currentUsername = this.username.asObservable();
@@ -23,15 +21,15 @@ export class LoginService {
   }
 
   addStudent(payload: User) {
-    return this.http.post(this.baseUrl+'users',payload);
+    return this.http.post(this.baseUrl + 'users', payload);
   }
 
   getStudentData(id: number): Observable<User> {
     return this.http.get<User>(`${this.baseUrl}users/${id}`);
   }
 
-  updateData(id:number, payload: User) {
-    return this.http.put(`${this.baseUrl}users/${id}`,payload);
+  updateData(id: number, payload: User) {
+    return this.http.put(`${this.baseUrl}users/${id}`, payload);
   }
 
   getFullData(): Observable<User[]> {

@@ -2,19 +2,19 @@
   margin-top: 300px;
   cursor: pointer;
 
-  &>h1 {
-    font-family: Ubuntu, 'sans-serif';
+  & > h1 {
+    font-family: Ubuntu, "sans-serif";
     font-size: 80px;
     text-align: center;
 
-    &>span {
+    & > span {
       font-family: Raleway, sans-serif;
       color: red;
       font-size: 100px;
     }
   }
 
-  &>p {
+  & > p {
     text-align: center;
     margin-top: 50px;
     font-family: Raleway, sans-serif;

@@ -2,10 +2,16 @@
 <div class="post-form" *ngIf="question">
   <form [formGroup]="postEdit">
     <label>
-      <input formControlName="title" type="text" placeholder="Title">
+      <input formControlName="title" type="text" placeholder="Title" />
     </label>
     <label>
-      <textarea formControlName="post" type="text" placeholder="What on your mind?"  cols="30" rows="3"></textarea>
+      <textarea
+        formControlName="post"
+        type="text"
+        placeholder="What on your mind?"
+        cols="30"
+        rows="3"
+      ></textarea>
     </label>
     <label>
       <select formControlName="category">
@@ -16,8 +22,10 @@
         <option value="other">Other</option>
       </select>
     </label>
-    <button class="askBtn" type="button" (click)="updatePost()">Update POST</button>
-    <a (click)="question=false">Close</a>
+    <button class="askBtn" type="button" (click)="updatePost()">
+      Update POST
+    </button>
+    <a (click)="question = false">Close</a>
   </form>
 </div>
 
@@ -27,15 +35,25 @@
   </div>
   <div *ngFor="let post of posts | async">
     <div class="post-item">
-      <div class="username">{{post.username}}</div>
+      <div class="username">{{ post.username }}</div>
       <div class="title">{{ post.title }}</div>
       <div class="post">{{ post.post }}</div>
       <div class="footer">
-        <div class="click">Clicked {{post.clicks}} times</div>
-        <a [routerLink]="['/forum', post.id]" (click)="expand(post.id)">See Full Discussion</a>
+        <div class="click">Clicked {{ post.clicks }} times</div>
+        <a [routerLink]="['/forum', post.id]" (click)="expand(post.id)"
+          >See Full Discussion</a
+        >
         <div class="buttons" *ngIf="post.userId === loginService.loggedId">
-          <button  class="editBtn" (click)="update(post.id)" title="edit">EDIT</button>
-          <button (click)="deletePost(post.id)" class="removeBtn" title="remove">DELETE</button>
+          <button class="editBtn" (click)="update(post.id)" title="edit">
+            EDIT
+          </button>
+          <button
+            (click)="deletePost(post.id)"
+            class="removeBtn"
+            title="remove"
+          >
+            DELETE
+          </button>
         </div>
       </div>
     </div>

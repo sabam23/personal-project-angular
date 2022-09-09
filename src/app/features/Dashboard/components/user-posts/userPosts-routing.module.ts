@@ -1,19 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {LoginGuard} from "../../../../core/guards/login.guard";
-import {UserPostsComponent} from "./user-posts.component";
-
+import { LoginGuard } from '../../../../core/guards/login.guard';
+import { UserPostsComponent } from './user-posts.component';
 
 const routes: Routes = [
   {
     path: '',
     component: UserPostsComponent,
-    canActivate: [LoginGuard]
-  }
+    canActivate: [LoginGuard],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class UserPostsRoutingModule { }
+export class UserPostsRoutingModule {}

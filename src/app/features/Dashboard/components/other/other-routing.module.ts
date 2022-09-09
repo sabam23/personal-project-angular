@@ -1,19 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {LoginGuard} from "../../../../core/guards/login.guard";
-import {OtherComponent} from "./other.component";
-
+import { LoginGuard } from '../../../../core/guards/login.guard';
+import { OtherComponent } from './other.component';
 
 const routes: Routes = [
   {
     path: '',
     component: OtherComponent,
-    canActivate: [LoginGuard]
-  }
+    canActivate: [LoginGuard],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class OtherRoutingModule { }
+export class OtherRoutingModule {}

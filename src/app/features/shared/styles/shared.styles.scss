@@ -13,7 +13,7 @@
     justify-content: center;
 
     & > p {
-      font-family: 'Raleway', sans-serif;
+      font-family: "Raleway", sans-serif;
       font-size: 20px;
       cursor: pointer;
       border-bottom: solid red 2px;
@@ -31,7 +31,7 @@
     row-gap: 10px;
 
     & .username {
-      font-family: Ubuntu, 'sans-serif';
+      font-family: Ubuntu, "sans-serif";
       font-size: 17px;
       text-align: right;
       padding: 5px 15px;
@@ -39,7 +39,7 @@
     }
 
     & .title {
-      font-family: Raleway, 'sans-serif';
+      font-family: Raleway, "sans-serif";
       font-size: 25px;
       color: #ff7b72;
       text-align: center;
@@ -51,7 +51,7 @@
       font-size: 18px;
       padding-left: 10px;
       color: #a5d6ff;
-      font-family: Raleway, 'sans-serif';
+      font-family: Raleway, "sans-serif";
       margin-bottom: 30px;
     }
 
@@ -62,7 +62,7 @@
       width: 90%;
       justify-content: space-around;
       margin-bottom: 10px;
-      font-family: 'Raleway', sans-serif;
+      font-family: "Raleway", sans-serif;
 
       & > a {
         text-decoration: none;
@@ -72,16 +72,16 @@
         cursor: pointer;
 
         &:hover {
-          border-bottom:solid red 2px ;
+          border-bottom: solid red 2px;
         }
       }
 
-      &  button {
+      & button {
         width: 60px;
         background: none;
         color: white;
         border: none;
-        font-family: 'Ubuntu', sans-serif;
+        font-family: "Ubuntu", sans-serif;
         border-bottom: solid pink 2px;
         cursor: pointer;
         margin-right: 10px;
@@ -96,13 +96,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: Raleway, 'sans-serif';
+    font-family: Raleway, "sans-serif";
     font-size: 17px;
     margin-bottom: 50px;
     row-gap: 25px;
 
-    &>a {
-      font-family: 'Raleway', sans-serif;
+    & > a {
+      font-family: "Raleway", sans-serif;
       font-size: 14px;
       color: white;
       padding-bottom: 5px;
@@ -120,7 +120,7 @@
       border: none;
       color: white;
       cursor: pointer;
-      font-family: Raleway, 'sans-serif';
+      font-family: Raleway, "sans-serif";
 
       &:hover {
         background: #fb2a26;
@@ -141,7 +141,7 @@
     & textarea {
       border-radius: 10px;
       padding-left: 10px;
-      font-family: Raleway, 'sans-serif';
+      font-family: Raleway, "sans-serif";
       font-size: 17px;
       resize: none;
       border: none;
@@ -153,7 +153,7 @@
       border: none;
       border-bottom: #161b22 solid 2px;
       border-radius: 10px;
-      font-family: Raleway, 'sans-serif';
+      font-family: Raleway, "sans-serif";
       width: 160px;
       height: 30px;
       padding: 0 8px;
@@ -164,7 +164,7 @@
 
 @media screen and (max-width: 1391px) {
   .newsFeedPosts {
-      width: 700px;
+    width: 700px;
   }
 }
 

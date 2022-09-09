@@ -1,4 +1,4 @@
-import {Comment} from "../../postDetail/interfaces/comment.interface";
+import { Comment } from '../../postDetail/interfaces/comment.interface';
 
 export interface Post {
   username: string;
