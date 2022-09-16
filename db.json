@@ -43,7 +43,7 @@
       "post": "How to generate angular component with one cli command?",
       "category": "programming",
       "username": "George Brown",
-      "clicks": 24,
+      "clicks": 26,
       "comments": [
         {
           "username": "Saba Mchedlishvili",
@@ -62,7 +62,7 @@
       "post": "Lets recall the greatest nba seasons.",
       "category": "sports",
       "username": "George Brown",
-      "clicks": 85,
+      "clicks": 86,
       "comments": [
         {
           "username": "Saba Mchedlishvili",
@@ -75,6 +75,14 @@
         {
           "username": "Klay Thompson",
           "comment": "2022 Lets Go warriors !!!"
+        },
+        {
+          "username": "Klay Thompson",
+          "comment": "2000"
+        },
+        {
+          "username": "Klay Thompson",
+          "comment": "15900"
         }
       ],
       "userId": 2,
@@ -189,7 +197,7 @@
       "post": "Tell us about your dream car",
       "category": "other",
       "username": "Jenson Button",
-      "clicks": 9,
+      "clicks": 10,
       "comments": [
         {
           "username": "Jenson Button",
@@ -208,7 +216,7 @@
       "post": "Do you like this project? I don't :)",
       "category": "other",
       "username": "Klay Thompson",
-      "clicks": 4,
+      "clicks": 5,
       "comments": [
         {
           "username": "Saba Mchedlishvili",
